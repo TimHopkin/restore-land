@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Preview Generator - Restore Land</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+            background: #f5f5f5;
+        }
+
+        .preview-container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .preview-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .preview-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #16a34a;
+        }
+
+        /* Main Open Graph Preview */
+        .og-preview {
+            width: 1200px;
+            height: 630px;
+            background: linear-gradient(135deg, #10b981, #059669);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .og-preview::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(52, 211, 153, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(110, 231, 183, 0.2) 0%, transparent 50%);
+        }
+
+        .og-content {
+            text-align: center;
+            color: white;
+            z-index: 2;
+            position: relative;
+            max-width: 900px;
+            padding: 0 60px;
+        }
+
+        .og-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            font-weight: 900;
+            margin-bottom: 30px;
+            letter-spacing: -2px;
+            text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .og-tagline {
+            font-family: 'Inter', sans-serif;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .og-description {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 400;
+            opacity: 0.95;
+            line-height: 1.4;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        /* Alternative Previews */
+        .alt-preview {
+            width: 1200px;
+            height: 630px;
+            background: linear-gradient(135deg, #16a34a, #065f46);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .alt-preview::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 30% 70%, rgba(34, 197, 94, 0.2) 0%, transparent 60%),
+                radial-gradient(circle at 70% 30%, rgba(16, 185, 129, 0.15) 0%, transparent 60%);
+        }
+
+        /* Square version for Instagram */
+        .square-preview {
+            width: 1080px;
+            height: 1080px;
+            background: linear-gradient(135deg, #10b981, #059669);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .square-preview::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 25% 75%, rgba(52, 211, 153, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 75% 25%, rgba(110, 231, 183, 0.2) 0%, transparent 50%);
+        }
+
+        .square-content {
+            text-align: center;
+            color: white;
+            z-index: 2;
+            position: relative;
+            max-width: 800px;
+            padding: 0 80px;
+        }
+
+        .square-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 5rem;
+            font-weight: 900;
+            margin-bottom: 40px;
+            letter-spacing: -2px;
+            text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .square-tagline {
+            font-family: 'Inter', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            line-height: 1.2;
+        }
+
+        .square-description {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 400;
+            opacity: 0.95;
+            line-height: 1.4;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .instructions {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .instructions h3 {
+            color: #16a34a;
+            margin-bottom: 15px;
+        }
+
+        .instructions ul {
+            margin-left: 20px;
+        }
+
+        .instructions li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="preview-container">
+        <!-- Primary Open Graph Preview -->
+        <div class="preview-card">
+            <div class="preview-title">Facebook/Open Graph Preview (1200×630)</div>
+            <div class="og-preview" id="og-main">
+                <div class="og-content">
+                    <div class="og-logo">RESTORE LAND</div>
+                    <div class="og-tagline">Britain's Future Starts Here</div>
+                    <div class="og-description">The three-word revolution transforming Britain from extraction to regeneration</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alternative Preview - Movement Focus -->
+        <div class="preview-card">
+            <div class="preview-title">Alternative Preview - Movement Focus (1200×630)</div>
+            <div class="alt-preview" id="alt-movement">
+                <div class="og-content">
+                    <div class="og-logo">RESTORE LAND</div>
+                    <div class="og-tagline">Join the Movement</div>
+                    <div class="og-description">Prosperous, beautiful, resilient land for Britain's future</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alternative Preview - Policy Focus -->
+        <div class="preview-card">
+            <div class="preview-title">Alternative Preview - Policy Focus (1200×630)</div>
+            <div class="alt-preview" id="alt-policy">
+                <div class="og-content">
+                    <div class="og-logo">RESTORE LAND</div>
+                    <div class="og-tagline">Eight Pillars to Transform Britain</div>
+                    <div class="og-description">From agricultural subsidies to digital sovereignty - the complete framework</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Square Preview for Instagram -->
+        <div class="preview-card">
+            <div class="preview-title">Instagram Square Preview (1080×1080)</div>
+            <div class="square-preview" id="square-main">
+                <div class="square-content">
+                    <div class="square-logo">RESTORE LAND</div>
+                    <div class="square-tagline">Britain's Future Starts Here</div>
+                    <div class="square-description">The three-word revolution</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instructions -->
+        <div class="instructions">
+            <h3>Usage Instructions</h3>
+            <ul>
+                <li><strong>Screenshot Process:</strong> Use browser dev tools or screenshot tools to capture each preview div precisely</li>
+                <li><strong>File Naming:</strong> Save as social-preview.jpg, social-preview-movement.jpg, social-preview-policy.jpg, social-preview-square.jpg</li>
+                <li><strong>Quality Settings:</strong> Export as JPG at 85-90% quality for optimal file size</li>
+                <li><strong>Alternative Text:</strong> Always include alt text describing the brand and message</li>
+            </ul>
+
+            <h3>Platform Specifications</h3>
+            <ul>
+                <li><strong>Facebook/Open Graph:</strong> 1200×630px (primary format)</li>
+                <li><strong>Twitter:</strong> Uses same 1200×630px images</li>
+                <li><strong>LinkedIn:</strong> 1200×630px recommended</li>
+                <li><strong>Instagram:</strong> 1080×1080px square format</li>
+            </ul>
+
+            <h3>Customization Options</h3>
+            <ul>
+                <li>Update taglines and descriptions for different campaigns</li>
+                <li>Maintain brand colors and typography for consistency</li>
+                <li>Use alternative previews for different content contexts</li>
+                <li>Consider seasonal or campaign-specific variations</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

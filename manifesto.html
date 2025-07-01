@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Manifesto - Restore Land</title>
+    
+    <!-- Favicon and Icons -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="favicon-32x32.svg">
+    <link rel="apple-touch-icon" href="apple-touch-icon.svg">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#16a34a">
+    <meta name="msapplication-TileColor" content="#16a34a">
+    <meta name="msapplication-config" content="browserconfig.xml">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://restoreland.uk/manifesto">
+    <meta property="og:title" content="The Manifesto - Restore Land">
+    <meta property="og:site_name" content="Restore Land">
+    <meta property="og:description" content="Read the complete Restore Land manifesto: The three-word revolution transforming Britain from extraction to regeneration through 8 pillars of land restoration.">
+    <meta property="og:image" content="https://restoreland.uk/brand-assets/social-preview.jpg">
+    <meta property="og:image:alt" content="The Manifesto - Restore Land. The complete plan for Britain's regenerative future.">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:locale" content="en_GB">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@restoreland">
+    <meta name="twitter:creator" content="@restoreland">
+    <meta name="twitter:title" content="The Manifesto - Restore Land">
+    <meta name="twitter:description" content="Read the complete Restore Land manifesto: The three-word revolution transforming Britain from extraction to regeneration through 8 pillars of land restoration.">
+    <meta name="twitter:image" content="https://restoreland.uk/brand-assets/social-preview.jpg">
+    <meta name="twitter:image:alt" content="The Manifesto - Restore Land. The complete plan for Britain's regenerative future.">
+
+    <!-- Additional Meta Tags -->
+    <meta name="description" content="The complete Restore Land manifesto: A detailed plan for transforming Britain through 8 pillars of land restoration, from digital sovereignty to regenerative economics.">
+    <meta name="keywords" content="manifesto, land restoration, sustainable agriculture, regenerative farming, Britain, environmental policy, rural development, climate change, food security, digital land solutions">
+    <meta name="author" content="Restore Land Movement">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Restore Land: A Manifesto for Britain's Future",
+      "description": "The complete manifesto outlining the 8 pillars of land restoration for Britain's regenerative future",
+      "author": {
+        "@type": "Organization",
+        "name": "Restore Land"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Restore Land",
+        "logo": "https://restoreland.uk/brand-assets/logos/restore-land-primary.svg"
+      },
+      "datePublished": "2025-01-01",
+      "dateModified": "2025-01-01"
+    }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            overflow-x: hidden;
+            background-color: #fafafa;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 15px 0;
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #16a34a;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #16a34a;
+        }
+
+        /* Scroll Progress Indicator */
+        .scroll-indicator {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: rgba(16, 185, 129, 0.2);
+            z-index: 9999;
+        }
+
+        .scroll-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #10b981, #059669);
+            width: 0%;
+            transition: width 0.1s ease;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 60vh;
+            background: linear-gradient(135deg, #065f46 0%, #16a34a 50%, #10b981 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            margin-top: 80px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            padding: 0 20px;
+            animation: fadeInUp 1.5s ease-out;
+            z-index: 1;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 900;
+            margin-bottom: 20px;
+            color: white;
+            text-shadow: 
+                0 2px 8px rgba(0,0,0,0.3),
+                0 4px 16px rgba(0,0,0,0.2);
+            letter-spacing: -2px;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            margin-bottom: 30px;
+            color: rgba(255, 255, 255, 0.95);
+            text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc-section {
+            background: white;
+            padding: 60px 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 80px;
+            z-index: 100;
+            border-bottom: 3px solid #10b981;
+            transition: all 0.3s ease;
+        }
+
+        .toc-section.collapsed {
+            padding: 15px 20px;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+        }
+
+        .toc-section.collapsed .toc-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .toc-section.collapsed .toc-grid {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+
+        .toc-section.collapsed .toc-item {
+            padding: 10px 15px;
+        }
+
+        .toc-section.collapsed .toc-item a {
+            font-size: 0.9rem;
+        }
+
+        .toc-section.collapsed .toc-item p {
+            display: none;
+        }
+
+        .toc-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .toc-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #065f46;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .toc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .toc-item {
+            background: #f8fffe;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #10b981;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .toc-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(16, 185, 129, 0.2);
+            background: white;
+        }
+
+        .toc-item a {
+            text-decoration: none;
+            color: #065f46;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .toc-item p {
+            color: #6b7280;
+            margin-top: 8px;
+            font-size: 0.9rem;
+        }
+
+        /* Content Sections */
+        .content-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .manifesto-section {
+            background: white;
+            margin: 40px 0;
+            padding: 60px 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+            scroll-margin-top: 120px;
+        }
+
+        .manifesto-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            color: #065f46;
+            margin-bottom: 30px;
+            text-align: center;
+            letter-spacing: -1px;
+        }
+
+        .manifesto-section h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            color: #16a34a;
+            margin: 40px 0 20px 0;
+            font-weight: 700;
+        }
+
+        .manifesto-section h4 {
+            font-size: 1.4rem;
+            color: #065f46;
+            margin: 30px 0 15px 0;
+            font-weight: 700;
+        }
+
+        .manifesto-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #374151;
+        }
+
+        .manifesto-section ul {
+            margin: 20px 0 20px 20px;
+            color: #374151;
+        }
+
+        .manifesto-section li {
+            margin-bottom: 10px;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        /* Three Word Hero */
+        .three-words {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(4rem, 10vw, 8rem);
+            font-weight: 900;
+            background: linear-gradient(135deg, #059669, #10b981, #34d399, #6ee7b7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+            margin: 40px 0;
+            line-height: 0.9;
+            letter-spacing: -3px;
+            text-shadow: 0 0 50px rgba(16, 185, 129, 0.3);
+        }
+
+        /* Pillar Cards */
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .pillar-card {
+            background: linear-gradient(145deg, #ffffff, #f8fafc);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.08), 0 8px 20px rgba(16, 185, 129, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 2px solid transparent;
+            position: relative;
+        }
+
+        .pillar-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #10b981, #34d399);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .pillar-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 25px 60px rgba(0,0,0,0.12), 0 15px 40px rgba(16, 185, 129, 0.2);
+            border-color: #10b981;
+        }
+
+        .pillar-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .pillar-number {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #10b981, #059669);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 900;
+            font-size: 1.2rem;
+            box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4);
+        }
+
+        .pillar-card h4 {
+            color: #065f46;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .pillar-quote {
+            font-style: italic;
+            color: #10b981;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        /* Economic Stats */
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+            background: #1f2937;
+            padding: 50px 40px;
+            border-radius: 15px;
+        }
+
+        .stat-item {
+            text-align: center;
+            color: white;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #22c55e;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        /* Timeline */
+        .timeline-container {
+            position: relative;
+            padding: 40px 0;
+        }
+
+        .timeline-container::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, #22c55e, #16a34a);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            display: flex;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .timeline-item:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            width: 45%;
+            position: relative;
+        }
+
+        .timeline-year {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #16a34a;
+            margin-bottom: 15px;
+        }
+
+        /* CTA Buttons */
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #10b981, #059669, #047857);
+            color: white;
+            padding: 18px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);
+            border: none;
+            cursor: pointer;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin: 20px auto;
+            display: block;
+            text-align: center;
+            max-width: 300px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 20px 50px rgba(16, 185, 129, 0.5);
+            background: linear-gradient(135deg, #059669, #047857, #065f46);
+        }
+
+        /* Membership Cards */
+        .membership-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .membership-card {
+            background: linear-gradient(145deg, #ffffff, #f8fafc);
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 3px solid transparent;
+        }
+
+        .membership-card:hover {
+            transform: translateY(-10px) scale(1.03);
+            border-color: #10b981;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.12), 0 15px 40px rgba(16, 185, 129, 0.25);
+        }
+
+        .membership-price {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #16a34a;
+            margin-bottom: 10px;
+        }
+
+        .membership-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .membership-features {
+            list-style: none;
+            text-align: left;
+            margin: 20px 0;
+            padding: 0;
+        }
+
+        .membership-features li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f3f4f6;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .membership-features li:before {
+            content: '✓';
+            color: #22c55e;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Mobile Navigation */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: #065f46;
+            margin: 3px 0;
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            z-index: 9998;
+            padding-top: 80px;
+        }
+
+        .mobile-nav.active {
+            display: block;
+        }
+
+        .mobile-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .mobile-nav a {
+            text-decoration: none;
+            color: #065f46;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-toggle {
+                display: flex;
+            }
+
+            .hero {
+                height: 50vh;
+            }
+
+            .toc-section {
+                position: relative;
+                top: 0;
+                padding: 40px 20px;
+            }
+
+            .toc-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .manifesto-section {
+                margin: 20px 0;
+                padding: 40px 20px;
+            }
+
+            .pillars-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .timeline-container::before {
+                left: 20px;
+            }
+            
+            .timeline-item {
+                flex-direction: column;
+                margin-left: 40px;
+            }
+            
+            .timeline-content {
+                width: 100%;
+            }
+
+            .stats-container {
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+                padding: 30px 20px;
+            }
+
+            .membership-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Footer */
+        .footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator">
+        <div class="scroll-progress" id="scrollProgress"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="initial.html" class="logo">RESTORE LAND</a>
+            <ul class="nav-links">
+                <li><a href="initial.html">Home</a></li>
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="#pillars">8 Pillars</a></li>
+                <li><a href="#economics">Economics</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#membership">Join Us</a></li>
+            </ul>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="initial.html">Home</a></li>
+            <li><a href="#vision">Vision</a></li>
+            <li><a href="#pillars">8 Pillars</a></li>
+            <li><a href="#economics">Economics</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#membership">Join Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>The Manifesto</h1>
+            <p class="hero-subtitle">A complete plan for transforming Britain from extraction to regeneration through the power of restored land</p>
+        </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="toc-section">
+        <div class="toc-container">
+            <h2 class="toc-title">Manifesto Contents</h2>
+            <div class="toc-grid">
+                <div class="toc-item">
+                    <a href="#vision">The Vision</a>
+                    <p>Land abundance for all Britain</p>
+                </div>
+                <div class="toc-item">
+                    <a href="#pillars">The 8 Pillars</a>
+                    <p>Our framework for transformation</p>
+                </div>
+                <div class="toc-item">
+                    <a href="#economics">Economic Impact</a>
+                    <p>From extraction to regeneration</p>
+                </div>
+                <div class="toc-item">
+                    <a href="#surrey">Surrey Proof</a>
+                    <p>Our demonstration project</p>
+                </div>
+                <div class="toc-item">
+                    <a href="#timeline">The Timeline</a>
+                    <p>Four years to transformation</p>
+                </div>
+                <div class="toc-item">
+                    <a href="#membership">Join the Movement</a>
+                    <p>Your role in Britain's future</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Container -->
+    <div class="content-container">
+
+        <!-- Vision Section -->
+        <section id="vision" class="manifesto-section fade-in">
+            <div class="three-words">RESTORE LAND</div>
+            <h2>The Vision: Land Abundance for All</h2>
+            <p><strong>Simple. Clear. Urgent.</strong> Britain's land is our foundation - let's make it work for everyone.</p>
+            
+            <p>Imagine a Britain where every acre works harder, smarter, and cleaner. Where farmers prosper while rivers run clear. Where communities thrive in beautiful landscapes powered by clean energy. Where your children inherit a land more abundant than the one we found.</p>
+            
+            <p><strong>This isn't utopian dreaming - it's practical patriotism.</strong></p>
+        </section>
+
+        <!-- The 8 Pillars Section -->
+        <section id="pillars" class="manifesto-section fade-in">
+            <h2>The Eight Pillars of Restore Land</h2>
+            
+            <div class="pillars-grid">
+                <div class="pillar-card">
+                    <div class="pillar-number">1</div>
+                    <h4>Digital Land Sovereignty</h4>
+                    <p class="pillar-quote">"Every acre tracked, every decision transparent"</p>
+                    <p>Britain will build the world's first complete digital land management system. No more fragmented databases, no more lost paperwork, no more bureaucratic black holes. One platform connecting every farmer to every processor to every retailer to every government department.</p>
+                    <p><strong>What this means:</strong></p>
+                    <ul>
+                        <li>Real-time monitoring of soil health, water quality, carbon storage</li>
+                        <li>Instant connection between sustainable farmers and premium buyers</li>
+                        <li>Transparent tracking from field to fork</li>
+                        <li>AI-optimized land use decisions based on data, not politics</li>
+                    </ul>
+                </div>
+
+                <div class="pillar-card">
+                    <div class="pillar-number">2</div>
+                    <h4>Financial Rewilding</h4>
+                    <p class="pillar-quote">"Pay farmers to heal the land, not exploit it"</p>
+                    <p>Transform Britain's £3.5 billion annual agricultural subsidies from rewarding production volume to rewarding ecosystem restoration. Make regenerative farming more profitable than extractive farming.</p>
+                    <p><strong>What this means:</strong></p>
+                    <ul>
+                        <li>Direct payments for carbon sequestration, biodiversity increases, water quality improvements</li>
+                        <li>Blended public-private financing connecting corporate ESG budgets to on-ground results</li>
+                        <li>Risk-sharing mechanisms that make sustainable farming financially attractive</li>
+                        <li>Local investment cooperatives where communities can invest in their landscape</li>
+                    </ul>
+                </div>
+
+                <div class="pillar-card">
+                    <div class="pillar-number">3</div>
+                    <h4>Energy Independence Through Land</h4>
+                    <p class="pillar-quote">"Every farm a power station, every community energy-sovereign"</p>
+                    <p>Transform Britain's 70% agricultural land into distributed clean energy infrastructure while maintaining food production. Make every landowner an energy entrepreneur.</p>
+                    <p><strong>What this means:</strong></p>
+                    <ul>
+                        <li>Solar panel incentives that allow continued grazing underneath</li>
+                        <li>Community-owned wind projects with guaranteed local profit-sharing</li>
+                        <li>Anaerobic digestion systems turning farm waste into village energy</li>
+                        <li>Battery storage networks managed by farming cooperatives</li>
+                    </ul>
+                </div>
+
+                <div class="pillar-card">
+                    <div class="pillar-number">4</div>
+                    <h4>Food Security Through Soil Security</h4>
+                    <p class="pillar-quote">"Healthy soil = healthy food = healthy people"</p>
+                    <p>Rebuild Britain's depleted soils to guarantee long-term food security while producing more nutritious food. Make British farming resilient to climate chaos.</p>
+                    <p><strong>What this means:</strong></p>
+                    <ul>
+                        <li>Mandatory soil carbon testing with improvement targets</li>
+                        <li>Premium pricing for high-nutrition, regeneratively-grown food</li>
+                        <li>Direct-to-consumer platforms connecting families to local farmers</li>
+                        <li>Community-supported agriculture programs in every town</li>
+                    </ul>
+                </div>
+
+                <div class="pillar-card">
+                    <div class="pillar-number">5</div>
+                    <h4>Democratic Land Planning</h4>
+                    <p class="pillar-quote">"Communities decide their landscape's future"</p>
+                    <p>Replace top-down planning with community-led land use decisions supported by AI optimization tools. Give every village a voice in their environment's future.</p>
+                    <p><strong>What this means:</strong></p>
+                    <ul>
+                        <li>Digital participatory budgeting for local land use decisions</li>
+                        <li>Community land trusts with guaranteed long-term affordability</li>
+                        <li>Local referendums on major development projects</li>
+                        <li>Neighborhood-level climate adaptation planning</li>
+                    </ul>
+                </div>
+
+                <div class="pillar-card">
+                    <div class="pillar-number">6</div>
+                    <h4>Nature as Infrastructure</h4>
+                    <p class="pillar-quote">"Rivers as flood defenses, forests as air conditioning"</p>
+                    <p>Treat natural systems as essential infrastructure requiring investment and maintenance. Make nature restoration a job-creating industry.</p>
+                    <p><strong>What this means:</strong></p>
+                    <ul>
+                        <li>Natural flood management instead of concrete flood barriers</li>
+                        <li>Urban forests as cooling systems for climate resilience</li>
+                        <li>Pollinator corridors connecting every green space</li>
+                        <li>Wetland restoration as water treatment facilities</li>
+                    </ul>
+                </div>
+
+                <div class="pillar-card">
+                    <div class="pillar-number">7</div>
+                    <h4>Rural Renaissance</h4>
+                    <p class="pillar-quote">"Vibrant villages, not dormitory towns"</p>
+                    <p>Reverse rural decline by making countryside careers attractive and financially viable. Create innovation hubs in market towns.</p>
+                    <p><strong>What this means:</strong></p>
+                    <ul>
+                        <li>Gigabit broadband to every farm enabling remote work</li>
+                        <li>Rural co-working spaces and innovation centers</li>
+                        <li>Apprenticeship programs in regenerative agriculture and green technology</li>
+                        <li>Tax incentives for businesses locating in rural areas</li>
+                    </ul>
+                </div>
+
+                <div class="pillar-card">
+                    <div class="pillar-number">8</div>
+                    <h4>Land as Legacy</h4>
+                    <p class="pillar-quote">"Prosperity in perpetuity, not quarterly profits"</p>
+                    <p>Shift from quarterly thinking to generational thinking. Create legal and financial frameworks that reward long-term land stewardship.</p>
+                    <p><strong>What this means:</strong></p>
+                    <ul>
+                        <li>Intergenerational land trusts protecting working landscapes</li>
+                        <li>Carbon storage contracts with 25-year terms</li>
+                        <li>Succession planning support for farming families</li>
+                        <li>Legal rights for future generations in planning decisions</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Economic Transformation -->
+        <section id="economics" class="manifesto-section fade-in">
+            <h2>The Economic Transformation</h2>
+            <h3>From Extraction to Regeneration Economics</h3>
+            
+            <p>Current British agriculture generates £9.9 billion annually while costing £2.8 billion in environmental damage cleanup. Restore Land will:</p>
+            
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-number">2x</span>
+                    <span class="stat-label">Double farm profitability through ecosystem service payments</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50k</span>
+                    <span class="stat-label">Create 50,000 new rural jobs in restoration and green technology</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">£15B</span>
+                    <span class="stat-label">Generate £15 billion in natural capital value through soil and biodiversity restoration</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">£5B</span>
+                    <span class="stat-label">Save £5 billion annually in flood damage through natural flood management</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">£25B</span>
+                    <span class="stat-label">Attract £25 billion in green investment to rural Britain</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Surrey Proof of Concept -->
+        <section id="surrey" class="manifesto-section fade-in">
+            <h2>Surrey: The Proof of Concept</h2>
+            <h3>Regenerative Surrey: The Demonstration Project</h3>
+            
+            <p>Start with Surrey as Britain's first Restore Land county:</p>
+            
+            <h4>Phase 1: Foundation (Year 1)</h4>
+            <ul>
+                <li>Onboard every Surrey farmer onto the digital platform</li>
+                <li>Establish Surrey Community Land Trust</li>
+                <li>Launch Surrey Carbon Cooperative</li>
+                <li>Create Surrey Food Network connecting farms to schools/hospitals</li>
+            </ul>
+
+            <h4>Phase 2: Innovation (Year 2)</h4>
+            <ul>
+                <li>Deploy AI-optimized land use planning across the county</li>
+                <li>Launch Surrey Green Investment Fund</li>
+                <li>Establish rural innovation hubs in Guildford, Dorking, Farnham</li>
+                <li>Begin large-scale rewilding projects</li>
+            </ul>
+
+            <h4>Phase 3: Replication (Year 3)</h4>
+            <ul>
+                <li>Document and package the Surrey model</li>
+                <li>Train teams for rollout to other counties</li>
+                <li>Establish national Restore Land training center</li>
+                <li>Export the model internationally</li>
+            </ul>
+        </section>
+
+        <!-- Timeline -->
+        <section id="timeline" class="manifesto-section fade-in">
+            <h2>The Timeline to Transformation</h2>
+            
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2025: Foundation Year</div>
+                        <h4>Launch Restore Land Movement</h4>
+                        <ul>
+                            <li>Launch Restore Land movement</li>
+                            <li>Establish Surrey demonstration project</li>
+                            <li>Build coalition of 1,000 supporters</li>
+                            <li>Secure initial £5M funding</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2026: Expansion Year</div>
+                        <h4>Scale Across Counties</h4>
+                        <ul>
+                            <li>Roll out to 5 additional counties</li>
+                            <li>Launch political candidates in local elections</li>
+                            <li>Achieve 10,000 active members</li>
+                            <li>Demonstrate £50M in economic impact</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2027: Breakthrough Year</div>
+                        <h4>National Policy Change</h4>
+                        <ul>
+                            <li>National legislation enabling framework</li>
+                            <li>100,000 movement members</li>
+                            <li>International partnerships established</li>
+                            <li>£500M in regenerative investments facilitated</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2028: Transformation Year</div>
+                        <h4>Britain Leads the World</h4>
+                        <ul>
+                            <li>50% of British counties participating</li>
+                            <li>Movement candidates in Westminster</li>
+                            <li>Global leadership in land restoration</li>
+                            <li>Britain as the world's regenerative agriculture capital</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Membership -->
+        <section id="membership" class="manifesto-section fade-in">
+            <h2>Join the Movement</h2>
+            
+            <div class="membership-grid">
+                <div class="membership-card">
+                    <div class="membership-price">FREE</div>
+                    <div class="membership-title">Restore Land Supporters</div>
+                    <ul class="membership-features">
+                        <li>Access to educational resources</li>
+                        <li>Quarterly newsletter with success stories</li>
+                        <li>Invitation to local meetups</li>
+                    </ul>
+                </div>
+
+                <div class="membership-card">
+                    <div class="membership-price">£25/mo</div>
+                    <div class="membership-title">Restore Land Champions</div>
+                    <ul class="membership-features">
+                        <li>Monthly webinars with experts</li>
+                        <li>Access to pilot programs</li>
+                        <li>Direct influence on policy development</li>
+                    </ul>
+                </div>
+
+                <div class="membership-card">
+                    <div class="membership-price">£100/mo</div>
+                    <div class="membership-title">Restore Land Partners</div>
+                    <ul class="membership-features">
+                        <li>Partnership with local demonstration projects</li>
+                        <li>Premium access to data and insights</li>
+                        <li>Speaking opportunities at events</li>
+                    </ul>
+                </div>
+
+                <div class="membership-card">
+                    <div class="membership-price">£1000+</div>
+                    <div class="membership-title">Restore Land Investors</div>
+                    <ul class="membership-features">
+                        <li>Equity participation in movement companies</li>
+                        <li>Advisory board membership</li>
+                        <li>Direct policy influence</li>
+                    </ul>
+                </div>
+            </div>
+
+            <a href="initial.html#membership" class="cta-button">Join the Movement</a>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="manifesto-section fade-in">
+            <h2>The Bottom Line</h2>
+            
+            <p style="text-align: center; font-size: 1.5rem; font-weight: 600; color: #16a34a; margin-bottom: 30px;">
+                This isn't about the environment.<br>
+                <strong>It's about prosperity.</strong>
+            </p>
+            
+            <p>Restore Land will make Britain:</p>
+            <ul>
+                <li><strong>More profitable</strong> for farmers and landowners</li>
+                <li><strong>More beautiful</strong> for communities and families</li>
+                <li><strong>More resilient</strong> for climate and economic shocks</li>
+                <li><strong>More sovereign</strong> for food and energy security</li>
+            </ul>
+            
+            <p style="text-align: center; font-size: 1.3rem; font-weight: 600; margin: 40px 0;">
+                The choice is simple: manage decline or restore abundance.
+            </p>
+            
+            <p style="text-align: center; font-size: 1.2rem; font-style: italic; margin-bottom: 40px;">
+                "The best time to plant a tree was 20 years ago. The second best time is now."
+            </p>
+            
+            <div style="text-align: center; font-size: 1.8rem; font-weight: 900; color: #16a34a; letter-spacing: 2px;">
+                RESTORE LAND - RESTORE BRITAIN - RESTORE THE FUTURE
+            </div>
+
+            <a href="initial.html" class="cta-button">Join the Revolution</a>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; margin-bottom: 20px;">
+                <div>
+                    <p>&copy; 2025 Restore Land Movement. Britain's Future Starts Here.</p>
+                    <p style="margin-top: 15px; opacity: 0.7;">The complete manifesto for Britain's regenerative transformation.</p>
+                </div>
+                <div style="display: flex; gap: 30px; flex-wrap: wrap;">
+                    <a href="initial.html" style="color: #22c55e; text-decoration: none; font-weight: 600;">Home</a>
+                    <a href="brand-guidelines.html" style="color: #22c55e; text-decoration: none; font-weight: 600;">Brand Guidelines</a>
+                    <a href="mailto:hello@restoreland.uk" style="color: #22c55e; text-decoration: none; font-weight: 600;">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Remove no-js class
+        document.documentElement.classList.remove('no-js');
+        
+        // Scroll progress and navbar effects
+        let scrollTicking = false;
+        function handleScroll() {
+            const scrollY = window.scrollY;
+            const navbar = document.getElementById('navbar');
+            const scrollProgress = document.getElementById('scrollProgress');
+            const tocSection = document.querySelector('.toc-section');
+            
+            // Navbar scroll effect
+            if (scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+            
+            // TOC collapse effect - collapse when scrolled past the hero section
+            const heroHeight = document.querySelector('.hero').offsetHeight;
+            if (scrollY > heroHeight + 200) {
+                tocSection.classList.add('collapsed');
+            } else {
+                tocSection.classList.remove('collapsed');
+            }
+            
+            // Scroll progress indicator
+            const scrolled = (scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            scrollProgress.style.width = scrolled + '%';
+            
+            scrollTicking = false;
+        }
+
+        window.addEventListener('scroll', function() {
+            if (!scrollTicking) {
+                requestAnimationFrame(handleScroll);
+                scrollTicking = true;
+            }
+        }, { passive: true });
+
+        // Fade in animation observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Initialize animations
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+        });
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile navigation
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mobileNav = document.getElementById('mobileNav');
+
+        if (mobileMenuToggle && mobileNav) {
+            mobileMenuToggle.addEventListener('click', function() {
+                this.classList.toggle('active');
+                mobileNav.classList.toggle('active');
+                document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : 'auto';
+            });
+
+            // Close mobile nav when clicking on a link
+            document.querySelectorAll('.mobile-nav a').forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenuToggle.classList.remove('active');
+                    mobileNav.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                });
+            });
+        }
+    </script>
+</body>
+</html>

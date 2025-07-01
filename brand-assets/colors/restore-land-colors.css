@@ -1,0 +1,42 @@
+/* Restore Land Brand Colors */
+
+:root {
+  /* Primary Colors */
+  --restore-green: #16a34a;
+  --growth-green: #10b981;
+  --deep-forest: #065f46;
+  
+  /* Secondary Colors */
+  --light-growth: #34d399;
+  --vibrant-earth: #059669;
+  --fresh-mint: #6ee7b7;
+  
+  /* Neutral Colors */
+  --rich-black: #1a1a1a;
+  --warm-gray: #4b5563;
+  --light-gray: #6b7280;
+  --clean-white: #fafafa;
+  --pure-white: #ffffff;
+  
+  /* Gradient Definitions */
+  --primary-gradient: linear-gradient(135deg, var(--growth-green), var(--vibrant-earth));
+  --accent-gradient: linear-gradient(135deg, var(--restore-green), var(--growth-green), var(--light-growth));
+  --dark-gradient: linear-gradient(135deg, var(--deep-forest), var(--restore-green));
+}
+
+/* Utility Classes */
+.text-restore-green { color: var(--restore-green); }
+.text-growth-green { color: var(--growth-green); }
+.text-deep-forest { color: var(--deep-forest); }
+
+.bg-restore-green { background-color: var(--restore-green); }
+.bg-growth-green { background-color: var(--growth-green); }
+.bg-deep-forest { background-color: var(--deep-forest); }
+
+.gradient-primary { background: var(--primary-gradient); }
+.gradient-accent { background: var(--accent-gradient); }
+.gradient-dark { background: var(--dark-gradient); }
+
+/* Border utilities */
+.border-restore-green { border-color: var(--restore-green); }
+.border-growth-green { border-color: var(--growth-green); }

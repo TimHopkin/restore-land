@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Preview Template</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        .social-preview {
+            width: 1200px;
+            height: 630px;
+            background: linear-gradient(135deg, #10b981, #059669);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .social-preview::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 80%, rgba(52, 211, 153, 0.3) 0%, transparent 50%),
+                       radial-gradient(circle at 80% 20%, rgba(110, 231, 183, 0.2) 0%, transparent 50%);
+        }
+
+        .content {
+            text-align: center;
+            color: white;
+            z-index: 2;
+            position: relative;
+            max-width: 900px;
+            padding: 0 60px;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            font-weight: 900;
+            margin-bottom: 30px;
+            letter-spacing: -2px;
+            text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .tagline {
+            font-family: 'Inter', sans-serif;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .description {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 400;
+            opacity: 0.95;
+            line-height: 1.4;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .twitter-card {
+            width: 1200px;
+            height: 675px;
+        }
+
+        .linkedin-card {
+            width: 1200px;
+            height: 627px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Facebook/Open Graph Template -->
+    <div class="social-preview">
+        <div class="content">
+            <div class="logo">RESTORE LAND</div>
+            <div class="tagline">Britain's Future Starts Here</div>
+            <div class="description">The three-word revolution transforming Britain from extraction to regeneration</div>
+        </div>
+    </div>
+
+    <!-- Instructions -->
+    <div style="margin: 40px; font-family: Inter, sans-serif; max-width: 800px;">
+        <h2>Social Media Preview Templates</h2>
+        <p><strong>Usage Instructions:</strong></p>
+        <ul>
+            <li>Take a screenshot of the preview div above for Facebook/Open Graph (1200x630)</li>
+            <li>Adjust the tagline and description text as needed for different campaigns</li>
+            <li>Maintain the brand colors and typography</li>
+            <li>Save as JPG at high quality for optimal file size</li>
+        </ul>
+        
+        <h3>Platform Specifications:</h3>
+        <ul>
+            <li><strong>Facebook/Open Graph:</strong> 1200x630px (recommended)</li>
+            <li><strong>Twitter:</strong> 1200x675px (16:9 aspect ratio)</li>
+            <li><strong>LinkedIn:</strong> 1200x627px</li>
+            <li><strong>Instagram:</strong> 1080x1080px (square - crop accordingly)</li>
+        </ul>
+
+        <h3>Alternative Text Variations:</h3>
+        <ul>
+            <li>"Join the movement for prosperous, beautiful, resilient land"</li>
+            <li>"8 pillars to transform Britain's land and future"</li>
+            <li>"From extraction to regeneration - Britain's new path forward"</li>
+            <li>"Making farming more profitable while healing the land"</li>
+        </ul>
+    </div>
+</body>
+</html>
