@@ -1,7 +1,7 @@
 {
     "name": "Restore Land - Britain's Future Starts Here",
     "short_name": "Restore Land",
-    "description": "The three-word revolution transforming Britain from extraction to regeneration. Join the movement for prosperous, beautiful, resilient land.",
+    "description": "The two-word revolution transforming Britain from extraction to regeneration. Join the movement for prosperous, beautiful, resilient land.",
     "icons": [
         {
             "src": "android-chrome-192x192.svg",
@@ -34,7 +34,7 @@
             "name": "Manifesto",
             "short_name": "Manifesto",
             "description": "Read the Restore Land manifesto",
-            "url": "/Manifesto",
+            "url": "/manifesto",
             "icons": [{ "src": "favicon.svg", "sizes": "any" }]
         }
     ]
