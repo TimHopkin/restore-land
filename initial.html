@@ -1,0 +1,2009 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restore Land - Britain's Future Starts Here</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            overflow-x: hidden;
+            background-color: #fafafa;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(16, 185, 129, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(52, 211, 153, 0.3) 0%, transparent 50%),
+                linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), 
+                url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTkyMCAxMDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8ZGVmcz4KPHN0eWxlPgoucHJpbWUgeyBmaWxsOiAjMTY1MjMzOyB9Ci5zZWMgeyBmaWxsOiAjMWY2ODM2OyB9Ci50ZXIgeyBmaWxsOiAjMjI3NDNiOyB9Ci5xdWF0IHsgZmlsbDogIzM0ODA0NzsgfQouc2t5IHsgZmlsbDogbGluZWFyLWdyYWRpZW50KHRvIGJvdHRvbSwgIzBmMTcyOSwgIzI2M2Y3MCk7IH0KPC9zdHlsZT4KPC9kZWZzPgo8cmVjdCBjbGFzcz0ic2t5IiB3aWR0aD0iMTkyMCIgaGVpZ2h0PSI0MDAiLz4KPHBhdGggY2xhc3M9InByaW1lIiBkPSJNMCA0MDBMNDM5IDMwOUw4NzggNDA4TDEzMTcgMzA3TDE3NTYgNDA2TDE5MjAgMzgwVjEwODBIMFY0MDBaIi8+CjxwYXRoIGNsYXNzPSJzZWMiIGQ9Ik0wIDQ1MEw0MzkgMzU5TDg3OCA0NThMMTMxNyAzNTdMMTc1NiA0NTZMMTkyMCA0MzBWMTA4MEgwVjQ1MFoiIG9wYWNpdHk9IjAuOSIvPgo8cGF0aCBjbGFzcz0idGVyIiBkPSJNMCA1MDBMNDM5IDQwOUw4NzggNTA4TDEzMTcgNDA3TDE3NTYgNTA2TDE5MjAgNDgwVjEwODBIMFY1MDBaIiBvcGFjaXR5PSIwLjciLz4KPHBhdGggY2xhc3M9InF1YXQiIGQ9Ik0wIDU1MEw0MzkgNDU5TDg3OCA1NThMMTMxNyA0NTdMMTc1NiA1NTZMMTkyMCA1MzBWMTA4MEgwVjU1MFoiIG9wYWNpdHk9IjAuNSIvPgo8Y2lyY2xlIGN4PSIxNjAwIiBjeT0iMjAwIiByPSI4IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjgiLz4KPGNpcmNsZSBjeD0iMTcwMCIgY3k9IjE1MCIgcj0iNiIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC42Ii8+CjxjaXJjbGUgY3g9IjE4MDAiIGN5PSIxODAiIHI9IjQiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuNCIvPgo8cGF0aCBkPSJNMzAwIDYwMEw0MjAgNTgwTDU0MCA2MjBMNjYwIDU5MEw3ODAgNjEwTDkwMCA1ODBMMTAyMCA2MDBMMTEwMCA1OTBMMTIwMCA2MTBMMTMwMCA1ODBWNjIwSDBWNjAwWiIgZmlsbD0iIzEwYjk4MSIgb3BhY2l0eT0iMC4zIi8+Cjwvc3ZnPgo=');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            /* Ensure parallax transform doesn't affect document flow */
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+            pointer-events: none;
+        }
+
+        /* Floating particles */
+        .hero::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(2px 2px at 20px 30px, rgba(255, 255, 255, 0.3), transparent),
+                radial-gradient(2px 2px at 40px 70px, rgba(16, 185, 129, 0.4), transparent),
+                radial-gradient(1px 1px at 90px 40px, rgba(255, 255, 255, 0.2), transparent),
+                radial-gradient(1px 1px at 130px 80px, rgba(52, 211, 153, 0.3), transparent),
+                radial-gradient(2px 2px at 160px 30px, rgba(255, 255, 255, 0.2), transparent);
+            background-repeat: repeat;
+            background-size: 200px 100px;
+            animation: floatingParticles 20s linear infinite;
+            pointer-events: none;
+        }
+
+        @keyframes floatingParticles {
+            0% { transform: translateY(100vh) rotate(0deg); }
+            100% { transform: translateY(-100vh) rotate(360deg); }
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 0 20px;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3.5rem, 10vw, 8rem);
+            font-weight: 900;
+            margin-bottom: 30px;
+            text-shadow: 3px 3px 8px rgba(0,0,0,0.6);
+            letter-spacing: -3px;
+            background: linear-gradient(135deg, #ffffff, #f0f9ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-tagline {
+            font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+            margin-bottom: 30px;
+            font-weight: 400;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+            letter-spacing: 0.5px;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1rem, 2.5vw, 1.3rem);
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #10b981, #059669, #047857);
+            color: white;
+            padding: 20px 45px;
+            text-decoration: none;
+            border-radius: 60px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 12px 35px rgba(16, 185, 129, 0.4), 0 4px 15px rgba(16, 185, 129, 0.2);
+            border: none;
+            cursor: pointer;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.6s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 20px 50px rgba(16, 185, 129, 0.5), 0 8px 25px rgba(16, 185, 129, 0.3);
+            background: linear-gradient(135deg, #059669, #047857, #065f46);
+        }
+        
+        .cta-button:hover::before {
+            left: 100%;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 15px 0;
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #16a34a;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #16a34a;
+        }
+
+        /* Content Sections */
+        .section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            /* Ensure sections maintain their position and aren't affected by transforms */
+            position: relative;
+            transform: translate3d(0, 0, 0);
+        }
+
+        .section-dark {
+            background: #1f2937;
+            color: white;
+            margin: 0;
+            max-width: none;
+            padding: 80px 0;
+        }
+
+        .section-dark .section {
+            padding: 0 20px;
+        }
+
+        .section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            margin-bottom: 40px;
+            text-align: center;
+            color: #065f46;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .section-dark h2 {
+            color: #22c55e;
+        }
+
+        .three-word-hero {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .three-words {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(4.5rem, 12vw, 10rem);
+            font-weight: 900;
+            background: linear-gradient(135deg, #059669, #10b981, #34d399, #6ee7b7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 30px;
+            line-height: 0.9;
+            letter-spacing: -4px;
+            text-shadow: 0 0 50px rgba(16, 185, 129, 0.3);
+            /* Ensure this element has its own transform context and is not affected by parallax */
+            position: relative;
+            z-index: 1;
+            transform: translate3d(0, 0, 0);
+        }
+
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin: 60px 0;
+        }
+
+        .pillar-card {
+            background: linear-gradient(145deg, #ffffff, #f8fafc);
+            padding: 45px;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.08), 0 8px 20px rgba(16, 185, 129, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 2px solid transparent;
+            position: relative;
+            overflow: visible;
+        }
+        
+        .pillar-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #10b981, #34d399);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .pillar-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 30px 80px rgba(0,0,0,0.12), 0 15px 40px rgba(16, 185, 129, 0.2);
+            border-color: #10b981;
+        }
+        
+        .pillar-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .pillar-card h3 {
+            color: #065f46;
+            font-size: 1.6rem;
+            margin-bottom: 18px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .pillar-quote {
+            font-style: italic;
+            color: #6b7280;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin: 60px 0;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #22c55e;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 40px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, #22c55e, #16a34a);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            display: flex;
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .timeline-item:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            width: 45%;
+            position: relative;
+        }
+
+        .timeline-year {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #16a34a;
+            margin-bottom: 15px;
+        }
+
+        .membership-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+
+        .membership-card {
+            background: linear-gradient(145deg, #ffffff, #f8fafc);
+            padding: 50px 35px;
+            border-radius: 28px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.08), 0 8px 25px rgba(16, 185, 129, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 3px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .membership-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, #10b981, #34d399, #6ee7b7);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .membership-card:hover {
+            transform: translateY(-15px) scale(1.03);
+            border-color: #10b981;
+            box-shadow: 0 35px 90px rgba(0,0,0,0.12), 0 20px 50px rgba(16, 185, 129, 0.25);
+        }
+        
+        .membership-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .membership-card.featured {
+            border-color: #16a34a;
+            transform: scale(1.05);
+        }
+
+        .membership-price {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #16a34a;
+            margin-bottom: 10px;
+        }
+
+        .membership-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .membership-features {
+            list-style: none;
+            text-align: left;
+            margin: 20px 0;
+        }
+
+        .membership-features li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f3f4f6;
+        }
+
+        .membership-features li:before {
+            content: '✓';
+            color: #22c55e;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .contact-section {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #16a34a, #22c55e);
+            color: white;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .contact-link {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px 30px;
+            border-radius: 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+        }
+
+        .footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-in {
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 0.8s ease;
+        }
+
+        .animate-in:not(.visible) {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .animate-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .stagger-animation {
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .stagger-animation:not(.visible) {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+
+        .stagger-animation.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Fallback for when JavaScript is disabled or fails */
+        .no-js .stagger-animation,
+        .no-js .animate-in {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+
+        /* Additional fallback using CSS animation delay for progressive enhancement */
+        @supports not (--css: variables) {
+            .stagger-animation {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mobile Navigation */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: #065f46;
+            margin: 3px 0;
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+
+        .mobile-menu-toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .mobile-menu-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            z-index: 9998;
+            padding-top: 80px;
+        }
+
+        .mobile-nav.active {
+            display: block;
+            animation: slideInDown 0.3s ease-out;
+        }
+
+        .mobile-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .mobile-nav a {
+            text-decoration: none;
+            color: #065f46;
+            font-size: 1.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-nav a:hover {
+            color: #10b981;
+            transform: scale(1.1);
+        }
+
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-toggle {
+                display: flex;
+            }
+            
+            .timeline::before {
+                left: 20px;
+            }
+            
+            .timeline-item {
+                flex-direction: column;
+                margin-left: 40px;
+            }
+            
+            .timeline-content {
+                width: 100%;
+            }
+            
+            .contact-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero h1 {
+                font-size: clamp(2.5rem, 8vw, 4rem);
+            }
+
+            .three-words {
+                font-size: clamp(3rem, 10vw, 6rem);
+            }
+
+            .pillars-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .membership-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+        }
+
+        /* Scroll indicator */
+        .scroll-indicator {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: rgba(16, 185, 129, 0.2);
+            z-index: 9999;
+        }
+
+        .scroll-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #10b981, #059669);
+            width: 0%;
+            transition: width 0.1s ease;
+        }
+
+        /* Performance Optimizations */
+        * {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Smooth scrolling and parallax effects */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .parallax-element {
+            transform: translate3d(0, 0, 0);
+            will-change: transform;
+        }
+
+        /* Optimize animations for performance - only set will-change when animating */
+        .stagger-animation.visible,
+        .animate-in.visible,
+        .pillar-card:hover,
+        .membership-card:hover,
+        .cta-button:hover {
+            will-change: transform;
+        }
+
+        /* Reduce motion for users who prefer it */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        /* Floating animation for hero elements */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .hero-content {
+            animation: fadeInUp 1.5s ease-out, float 6s ease-in-out infinite 2s;
+        }
+
+        /* Glow effects */
+        .glow-on-hover {
+            transition: all 0.3s ease;
+        }
+
+        .glow-on-hover:hover {
+            text-shadow: 0 0 20px rgba(16, 185, 129, 0.6);
+        }
+
+        /* Stagger animation delays for cards */
+        .pillars-grid .stagger-animation:nth-child(1) { transition-delay: 0.1s; }
+        .pillars-grid .stagger-animation:nth-child(2) { transition-delay: 0.25s; }
+        .pillars-grid .stagger-animation:nth-child(3) { transition-delay: 0.4s; }
+        .pillars-grid .stagger-animation:nth-child(4) { transition-delay: 0.55s; }
+        .pillars-grid .stagger-animation:nth-child(5) { transition-delay: 0.7s; }
+        .pillars-grid .stagger-animation:nth-child(6) { transition-delay: 0.85s; }
+        .pillars-grid .stagger-animation:nth-child(7) { transition-delay: 1.0s; }
+        .pillars-grid .stagger-animation:nth-child(8) { transition-delay: 1.15s; }
+
+        /* Magnetic hover effect */
+        .magnetic {
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Pulse animation for important elements */
+        @keyframes pulse-glow {
+            0%, 100% { 
+                box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+            }
+            50% { 
+                box-shadow: 0 0 40px rgba(16, 185, 129, 0.8), 0 0 60px rgba(16, 185, 129, 0.6);
+            }
+        }
+
+        .pulse-glow {
+            animation: pulse-glow 3s ease-in-out infinite;
+        }
+
+        /* Visual Enhancement Elements */
+        .section-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 30px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #10b981, #059669);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
+        }
+
+        .pillar-number {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #10b981, #059669);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 900;
+            font-size: 18px;
+            box-shadow: 0 5px 15px rgba(16, 185, 129, 0.4);
+        }
+
+        .stat-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #10b981, #34d399);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            color: white;
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
+        }
+
+        /* Decorative Elements */
+        .decorative-line {
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #10b981, #34d399);
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+
+        .accent-dot {
+            width: 12px;
+            height: 12px;
+            background: #10b981;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 8px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+        }
+
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 500px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+            position: relative;
+            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.3);
+            animation: slideInUp 0.3s ease-out;
+        }
+
+        .modal-close {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #6b7280;
+            transition: color 0.3s ease;
+        }
+
+        .modal-close:hover {
+            color: #dc2626;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #374151;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e5e7eb;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #10b981;
+            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+        }
+
+        .form-submit {
+            width: 100%;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .form-submit:hover {
+            background: linear-gradient(135deg, #059669, #047857);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Bottom Line Section Enhancements */
+        .benefit-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(16, 185, 129, 0.15);
+            border-color: rgba(16, 185, 129, 0.6);
+            background: linear-gradient(135deg, #ffffff, #f0fdf4);
+        }
+
+        .bottom-line-section .benefit-card {
+            cursor: pointer;
+        }
+
+        /* Mobile Responsive Styles for Bottom Line */
+        @media (max-width: 768px) {
+            .bottom-line-section {
+                padding: 60px 20px !important;
+            }
+            
+            .bottom-line-section .benefit-card {
+                padding: 30px 20px !important;
+            }
+            
+            .bottom-line-section .benefit-card h4 {
+                font-size: 1.2rem !important;
+            }
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            .benefit-card {
+                transition: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator">
+        <div class="scroll-progress" id="scrollProgress"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">RESTORE LAND</a>
+            <ul class="nav-links">
+                <li><a href="#manifesto">Manifesto</a></li>
+                <li><a href="#pillars">The 8 Pillars</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#membership">Join Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="#manifesto">Manifesto</a></li>
+            <li><a href="#pillars">The 8 Pillars</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#membership">Join Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>RESTORE LAND</h1>
+            <p class="hero-tagline">Britain's Future Starts Here</p>
+            <p class="hero-subtitle">Simple. Clear. Urgent. Britain's land is our foundation - let's make it work for everyone.</p>
+            <a href="#manifesto" class="cta-button pulse-glow">Join the Movement</a>
+        </div>
+    </section>
+
+    <!-- Three Word Revolution -->
+    <section class="section" id="manifesto">
+        <h2>The Vision: Land Abundance for All</h2>
+        <div class="three-word-hero">
+            <div class="section-icon">🇬🇧</div>
+            <div class="three-words">RESTORE LAND</div>
+            <div class="decorative-line"></div>
+            <p style="font-size: 1.3rem; color: #6b7280; max-width: 600px; margin: 0 auto;">
+                The three-word revolution that will transform Britain from extraction to regeneration, 
+                from decline to abundance, from quarterly profits to generational prosperity.
+            </p>
+            <div style="text-align: center; margin: 30px 0;">
+                <span class="accent-dot"></span>
+                <span class="accent-dot"></span>
+                <span class="accent-dot"></span>
+            </div>
+        </div>
+
+        <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <p style="font-size: 1.2rem; line-height: 1.8; color: #4b5563;">
+                Imagine a Britain where every acre works harder, smarter, and cleaner. Where farmers prosper while rivers run clear. 
+                Where communities thrive in beautiful landscapes powered by clean energy. Where your children inherit a land more 
+                abundant than the one we found.
+            </p>
+            <p style="font-size: 1.3rem; font-weight: 600; color: #16a34a; margin-top: 30px;">
+                This isn't utopian dreaming - it's practical patriotism.
+            </p>
+        </div>
+    </section>
+
+    <!-- The 8 Pillars -->
+    <section class="section-dark" id="pillars">
+        <div class="section">
+            <h2>The Eight Pillars of Restore Land</h2>
+            <div class="pillars-grid">
+                <div class="pillar-card stagger-animation magnetic">
+                    <div class="pillar-number">1</div>
+                    <h3 class="glow-on-hover">Digital Land Sovereignty</h3>
+                    <p class="pillar-quote">"Every acre tracked, every decision transparent"</p>
+                    <p>Britain will build the world's first complete digital land management system. One platform connecting every farmer to every processor to every retailer to every government department.</p>
+                </div>
+
+                <div class="pillar-card stagger-animation magnetic">
+                    <div class="pillar-number">2</div>
+                    <h3 class="glow-on-hover">Financial Rewilding</h3>
+                    <p class="pillar-quote">"Pay farmers to heal the land, not exploit it"</p>
+                    <p>Transform Britain's £3.5 billion annual agricultural subsidies from rewarding production volume to rewarding ecosystem restoration.</p>
+                </div>
+
+                <div class="pillar-card stagger-animation magnetic">
+                    <div class="pillar-number">3</div>
+                    <h3 class="glow-on-hover">Energy Independence Through Land</h3>
+                    <p class="pillar-quote">"Every farm a power station, every community energy-sovereign"</p>
+                    <p>Transform Britain's 70% agricultural land into distributed clean energy infrastructure while maintaining food production.</p>
+                </div>
+
+                <div class="pillar-card stagger-animation magnetic">
+                    <div class="pillar-number">4</div>
+                    <h3 class="glow-on-hover">Food Security Through Soil Security</h3>
+                    <p class="pillar-quote">"Healthy soil = healthy food = healthy people"</p>
+                    <p>Rebuild Britain's depleted soils to guarantee long-term food security while producing more nutritious food.</p>
+                </div>
+
+                <div class="pillar-card stagger-animation magnetic">
+                    <div class="pillar-number">5</div>
+                    <h3 class="glow-on-hover">Democratic Land Planning</h3>
+                    <p class="pillar-quote">"Communities decide their landscape's future"</p>
+                    <p>Replace top-down planning with community-led land use decisions supported by AI optimization tools.</p>
+                </div>
+
+                <div class="pillar-card stagger-animation magnetic">
+                    <div class="pillar-number">6</div>
+                    <h3 class="glow-on-hover">Nature as Infrastructure</h3>
+                    <p class="pillar-quote">"Rivers as flood defenses, forests as air conditioning"</p>
+                    <p>Treat natural systems as essential infrastructure requiring investment and maintenance.</p>
+                </div>
+
+                <div class="pillar-card stagger-animation magnetic">
+                    <div class="pillar-number">7</div>
+                    <h3 class="glow-on-hover">Rural Renaissance</h3>
+                    <p class="pillar-quote">"Vibrant villages, not dormitory towns"</p>
+                    <p>Reverse rural decline by making countryside careers attractive and financially viable.</p>
+                </div>
+
+                <div class="pillar-card stagger-animation magnetic">
+                    <div class="pillar-number">8</div>
+                    <h3 class="glow-on-hover">Land as Legacy</h3>
+                    <p class="pillar-quote">"Prosperity in perpetuity, not quarterly profits"</p>
+                    <p>Shift from quarterly thinking to generational thinking with frameworks that reward long-term stewardship.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Economic Impact -->
+    <section class="section">
+        <h2>The Economic Transformation</h2>
+        <p style="text-align: center; font-size: 1.3rem; color: #4b5563; margin-bottom: 50px; max-width: 800px; margin-left: auto; margin-right: auto;">
+            From Extraction to Regeneration Economics - Restore Land will deliver measurable prosperity for all of Britain.
+        </p>
+        
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-icon">🌱</div>
+                <span class="stat-number">2x</span>
+                <span class="stat-label">Farm Profitability Through Ecosystem Payments</span>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon">👥</div>
+                <span class="stat-number">50k</span>
+                <span class="stat-label">New Rural Jobs in Restoration & Green Tech</span>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon">🌿</div>
+                <span class="stat-number">£15B</span>
+                <span class="stat-label">Natural Capital Value Creation</span>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon">💰</div>
+                <span class="stat-number">£25B</span>
+                <span class="stat-label">Green Investment Attracted to Rural Britain</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="section-dark" id="timeline">
+        <div class="section">
+            <h2>The Timeline to Transformation</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content animate-in">
+                        <div class="timeline-year">2025: Foundation Year</div>
+                        <h4>Launch Restore Land Movement</h4>
+                        <ul>
+                            <li>Establish Surrey demonstration project</li>
+                            <li>Build coalition of 1,000 supporters</li>
+                            <li>Secure initial £5M funding</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content animate-in">
+                        <div class="timeline-year">2026: Expansion Year</div>
+                        <h4>Scale Across Counties</h4>
+                        <ul>
+                            <li>Roll out to 5 additional counties</li>
+                            <li>Launch political candidates in local elections</li>
+                            <li>Achieve 10,000 active members</li>
+                            <li>Demonstrate £50M in economic impact</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content animate-in">
+                        <div class="timeline-year">2027: Breakthrough Year</div>
+                        <h4>National Policy Change</h4>
+                        <ul>
+                            <li>National legislation enabling framework</li>
+                            <li>100,000 movement members</li>
+                            <li>International partnerships established</li>
+                            <li>£500M in regenerative investments facilitated</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content animate-in">
+                        <div class="timeline-year">2028: Transformation Year</div>
+                        <h4>Britain Leads the World</h4>
+                        <ul>
+                            <li>50% of British counties participating</li>
+                            <li>Movement candidates in Westminster</li>
+                            <li>Global leadership in land restoration</li>
+                            <li>Britain as the world's regenerative agriculture capital</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership -->
+    <section class="section" id="membership">
+        <h2>Join the Movement</h2>
+        <p style="text-align: center; font-size: 1.2rem; color: #4b5563; margin-bottom: 50px;">
+            Choose your level of commitment to Britain's regenerative future
+        </p>
+        
+        <div class="membership-grid">
+            <div class="membership-card animate-in">
+                <div class="membership-price">FREE</div>
+                <div class="membership-title">Restore Land Supporters</div>
+                <ul class="membership-features">
+                    <li>Access to educational resources</li>
+                    <li>Quarterly newsletter with success stories</li>
+                    <li>Invitation to local meetups</li>
+                    <li>Digital manifesto and toolkit</li>
+                </ul>
+                <button class="cta-button membership-signup" data-tier="free" style="width: 100%; margin-top: 20px;">Join Free</button>
+            </div>
+
+            <div class="membership-card featured animate-in">
+                <div class="membership-price">£25/mo</div>
+                <div class="membership-title">Restore Land Champions</div>
+                <ul class="membership-features">
+                    <li>Monthly webinars with experts</li>
+                    <li>Access to pilot programs</li>
+                    <li>Direct influence on policy development</li>
+                    <li>Early access to tools and platforms</li>
+                    <li>Regional networking events</li>
+                </ul>
+                <button class="cta-button membership-signup" data-tier="champion" style="width: 100%; margin-top: 20px;">Become a Champion</button>
+            </div>
+
+            <div class="membership-card animate-in">
+                <div class="membership-price">£100/mo</div>
+                <div class="membership-title">Restore Land Partners</div>
+                <ul class="membership-features">
+                    <li>Partnership with local demonstration projects</li>
+                    <li>Premium access to data and insights</li>
+                    <li>Speaking opportunities at events</li>
+                    <li>Direct consultation on policy</li>
+                    <li>Priority access to funding opportunities</li>
+                </ul>
+                <button class="cta-button membership-signup" data-tier="partner" style="width: 100%; margin-top: 20px;">Become a Partner</button>
+            </div>
+
+            <div class="membership-card animate-in">
+                <div class="membership-price">£1000+</div>
+                <div class="membership-title">Restore Land Investors</div>
+                <ul class="membership-features">
+                    <li>Equity participation in movement companies</li>
+                    <li>Advisory board membership</li>
+                    <li>Direct policy influence</li>
+                    <li>Investment opportunities in projects</li>
+                    <li>Exclusive high-level networking</li>
+                </ul>
+                <button class="cta-button membership-signup" data-tier="investor" style="width: 100%; margin-top: 20px;">Invest in the Future</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Surrey Proof of Concept -->
+    <section class="section-dark">
+        <div class="section">
+            <h2>Surrey: The Proof of Concept</h2>
+            <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <h3 style="color: #22c55e; font-size: 2rem; margin-bottom: 20px;">Regenerative Surrey: The Demonstration Project</h3>
+                <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 40px;">
+                    Start with Surrey as Britain's first Restore Land county. We'll onboard every farmer, establish community 
+                    land trusts, launch the Surrey Carbon Cooperative, and create the Surrey Food Network connecting farms 
+                    directly to schools and hospitals.
+                </p>
+                <a href="#contact" class="cta-button">Join Surrey's Transformation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Line -->
+    <section class="section bottom-line-section" style="
+        background: #fafafa;
+        position: relative;
+        overflow: hidden;
+    ">
+        <!-- Subtle background pattern -->
+        <div style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 20%, rgba(16, 185, 129, 0.06) 0%, transparent 50%),
+                       radial-gradient(circle at 70% 80%, rgba(52, 211, 153, 0.04) 0%, transparent 50%);
+            pointer-events: none;
+        "></div>
+
+        <div style="
+            text-align: center; 
+            max-width: 1000px; 
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        ">
+            <!-- Main heading with brand typography -->
+            <h2 style="
+                font-family: 'Playfair Display', serif;
+                font-size: clamp(2.5rem, 6vw, 4rem);
+                font-weight: 700;
+                color: #065f46;
+                margin-bottom: 20px;
+            ">The Bottom Line</h2>
+
+            <!-- Decorative line -->
+            <div style="
+                width: 120px;
+                height: 4px;
+                background: linear-gradient(135deg, #10b981, #059669, #047857);
+                margin: 0 auto 40px auto;
+                border-radius: 2px;
+            "></div>
+
+            <!-- Primary value proposition -->
+            <p style="
+                font-family: 'Inter', sans-serif;
+                font-size: clamp(1.3rem, 3vw, 1.8rem);
+                font-weight: 600;
+                color: #16a34a;
+                margin-bottom: 60px;
+                line-height: 1.4;
+            ">
+                This isn't about the environment.<br>
+                <span style="font-weight: 800;">It's about prosperity.</span>
+            </p>
+
+            <!-- Enhanced benefits grid -->
+            <div style="
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                gap: 35px;
+                margin: 60px 0;
+            ">
+                <!-- More Profitable -->
+                <div class="benefit-card" style="
+                    background: white;
+                    border: 1px solid rgba(16, 185, 129, 0.2);
+                    border-radius: 20px;
+                    padding: 40px 25px;
+                    text-align: center;
+                    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                    position: relative;
+                    overflow: hidden;
+                    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+                ">
+                    <div style="
+                        width: 60px;
+                        height: 60px;
+                        background: linear-gradient(135deg, #10b981, #059669);
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0 auto 20px auto;
+                        font-size: 1.5rem;
+                        box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+                    ">💰</div>
+                    <h4 style="
+                        font-family: 'Inter', sans-serif;
+                        color: #10b981;
+                        font-size: 1.4rem;
+                        font-weight: 700;
+                        margin-bottom: 15px;
+                    ">More Profitable</h4>
+                    <p style="
+                        font-family: 'Inter', sans-serif;
+                        color: #4b5563;
+                        font-size: 1rem;
+                        line-height: 1.6;
+                        margin: 0;
+                    ">For farmers and landowners</p>
+                </div>
+
+                <!-- More Beautiful -->
+                <div class="benefit-card" style="
+                    background: white;
+                    border: 1px solid rgba(16, 185, 129, 0.2);
+                    border-radius: 20px;
+                    padding: 40px 25px;
+                    text-align: center;
+                    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                    position: relative;
+                    overflow: hidden;
+                    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+                ">
+                    <div style="
+                        width: 60px;
+                        height: 60px;
+                        background: linear-gradient(135deg, #10b981, #059669);
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0 auto 20px auto;
+                        font-size: 1.5rem;
+                        box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+                    ">🌿</div>
+                    <h4 style="
+                        font-family: 'Inter', sans-serif;
+                        color: #10b981;
+                        font-size: 1.4rem;
+                        font-weight: 700;
+                        margin-bottom: 15px;
+                    ">More Beautiful</h4>
+                    <p style="
+                        font-family: 'Inter', sans-serif;
+                        color: #4b5563;
+                        font-size: 1rem;
+                        line-height: 1.6;
+                        margin: 0;
+                    ">For communities and families</p>
+                </div>
+
+                <!-- More Resilient -->
+                <div class="benefit-card" style="
+                    background: white;
+                    border: 1px solid rgba(16, 185, 129, 0.2);
+                    border-radius: 20px;
+                    padding: 40px 25px;
+                    text-align: center;
+                    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                    position: relative;
+                    overflow: hidden;
+                    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+                ">
+                    <div style="
+                        width: 60px;
+                        height: 60px;
+                        background: linear-gradient(135deg, #10b981, #059669);
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0 auto 20px auto;
+                        font-size: 1.5rem;
+                        box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+                    ">🛡️</div>
+                    <h4 style="
+                        font-family: 'Inter', sans-serif;
+                        color: #10b981;
+                        font-size: 1.4rem;
+                        font-weight: 700;
+                        margin-bottom: 15px;
+                    ">More Resilient</h4>
+                    <p style="
+                        font-family: 'Inter', sans-serif;
+                        color: #4b5563;
+                        font-size: 1rem;
+                        line-height: 1.6;
+                        margin: 0;
+                    ">For climate and economic shocks</p>
+                </div>
+
+                <!-- More Sovereign -->
+                <div class="benefit-card" style="
+                    background: white;
+                    border: 1px solid rgba(16, 185, 129, 0.2);
+                    border-radius: 20px;
+                    padding: 40px 25px;
+                    text-align: center;
+                    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                    position: relative;
+                    overflow: hidden;
+                    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+                ">
+                    <div style="
+                        width: 60px;
+                        height: 60px;
+                        background: linear-gradient(135deg, #10b981, #059669);
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0 auto 20px auto;
+                        font-size: 1.5rem;
+                        box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+                    ">🇬🇧</div>
+                    <h4 style="
+                        font-family: 'Inter', sans-serif;
+                        color: #10b981;
+                        font-size: 1.4rem;
+                        font-weight: 700;
+                        margin-bottom: 15px;
+                    ">More Sovereign</h4>
+                    <p style="
+                        font-family: 'Inter', sans-serif;
+                        color: #4b5563;
+                        font-size: 1rem;
+                        line-height: 1.6;
+                        margin: 0;
+                    ">For food and energy security</p>
+                </div>
+            </div>
+
+            <!-- Final message -->
+            <p style="
+                font-family: 'Inter', sans-serif;
+                font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+                font-weight: 600;
+                color: #1a1a1a;
+                margin: 60px 0 50px 0;
+                line-height: 1.5;
+            ">
+                The choice is simple: <span style="color: #dc2626; font-weight: 700;">manage decline</span> or <span style="color: #10b981; font-weight: 700;">restore abundance</span>.
+            </p>
+
+            <!-- Enhanced CTA Button -->
+            <a href="#membership" class="cta-button" style="font-size: 1.3rem; padding: 25px 55px; text-transform: uppercase; letter-spacing: 1px;">Restore Britain Now</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <h2 style="font-size: 3rem; margin-bottom: 30px;">Ready to Transform Britain?</h2>
+        <p style="font-size: 1.3rem; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">
+            Join thousands who are already building Britain's regenerative future. Every acre matters. Every voice counts.
+        </p>
+        <div class="contact-links">
+            <a href="mailto:hello@restoreland.uk" class="contact-link magnetic">Email Us</a>
+            <a href="#" class="contact-link magnetic">Join Telegram</a>
+            <a href="#" class="contact-link magnetic">Follow Twitter</a>
+            <a href="#" class="contact-link magnetic">LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Restore Land Movement. Britain's Future Starts Here.</p>
+        <p style="margin-top: 15px; opacity: 0.7;">Prosperity through regeneration. Democracy through participation. Sovereignty through restoration.</p>
+    </footer>
+
+    <!-- Membership Signup Modal -->
+    <div id="membershipModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 id="modalTitle" style="margin-bottom: 30px; color: #065f46;">Join the Movement</h2>
+            <form id="membershipForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="location">Location (County)</label>
+                    <input type="text" id="location" name="location" placeholder="e.g., Surrey, Kent, Yorkshire">
+                </div>
+                <div class="form-group">
+                    <label for="background">Background/Interest</label>
+                    <select id="background" name="background">
+                        <option value="">Select your background</option>
+                        <option value="farmer">Farmer/Landowner</option>
+                        <option value="environmental">Environmental Professional</option>
+                        <option value="business">Business/Finance</option>
+                        <option value="policy">Policy/Government</option>
+                        <option value="community">Community Organizer</option>
+                        <option value="academic">Academic/Researcher</option>
+                        <option value="concerned-citizen">Concerned Citizen</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="motivation">What draws you to Restore Land? (Optional)</label>
+                    <textarea id="motivation" name="motivation" rows="3" placeholder="Share what motivates you to join this movement..."></textarea>
+                </div>
+                <input type="hidden" id="membershipTier" name="membershipTier">
+                <button type="submit" class="form-submit">Join the Movement</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 style="margin-bottom: 30px; color: #065f46;">Get in Touch</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="contactName">Name *</label>
+                    <input type="text" id="contactName" name="contactName" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactEmail">Email *</label>
+                    <input type="email" id="contactEmail" name="contactEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject">
+                        <option value="general">General Inquiry</option>
+                        <option value="partnership">Partnership Opportunity</option>
+                        <option value="press">Press/Media</option>
+                        <option value="volunteer">Volunteer</option>
+                        <option value="funding">Funding/Investment</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help or how you'd like to get involved..."></textarea>
+                </div>
+                <button type="submit" class="form-submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Remove no-js class to enable JS-dependent animations
+        document.documentElement.classList.remove('no-js');
+        
+        // Throttled scroll handler for better performance
+        let scrollTicking = false;
+        function handleScroll() {
+            const scrollY = window.scrollY;
+            const navbar = document.getElementById('navbar');
+            const scrollProgress = document.getElementById('scrollProgress');
+            
+            // Navbar scroll effect
+            if (scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+            
+            // Scroll progress indicator
+            const scrolled = (scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            scrollProgress.style.width = scrolled + '%';
+            
+            scrollTicking = false;
+        }
+
+        window.addEventListener('scroll', function() {
+            if (!scrollTicking) {
+                requestAnimationFrame(handleScroll);
+                scrollTicking = true;
+            }
+        }, { passive: true });
+
+        // Animate elements on scroll with intersection observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Initialize animation system
+        document.addEventListener('DOMContentLoaded', function() {
+            // Observe all animate-in and stagger-animation elements
+            document.querySelectorAll('.animate-in, .stagger-animation').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Immediately show elements that are in view with stagger effect for pillars
+            setTimeout(() => {
+                document.querySelectorAll('.animate-in, .stagger-animation').forEach((el, index) => {
+                    const rect = el.getBoundingClientRect();
+                    if (rect.top < window.innerHeight) {
+                        // Add stagger effect specifically for pillar cards
+                        if (el.classList.contains('pillar-card')) {
+                            setTimeout(() => {
+                                el.classList.add('visible');
+                            }, index * 150);
+                        } else {
+                            el.classList.add('visible');
+                        }
+                    }
+                });
+            }, 100);
+
+            // Special handling for pillars section - ensure it's visible when scrolled to
+            const pillarsSection = document.getElementById('pillars');
+            if (pillarsSection) {
+                // Ensure pillars are immediately visible if they're in view
+                const pillarCards = pillarsSection.querySelectorAll('.pillar-card');
+                const pillarsRect = pillarsSection.getBoundingClientRect();
+                
+                if (pillarsRect.top < window.innerHeight) {
+                    pillarCards.forEach((card, index) => {
+                        setTimeout(() => {
+                            card.classList.add('visible');
+                        }, index * 150);
+                    });
+                }
+                
+                const pillarsObserver = new IntersectionObserver(function(entries) {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const pillarCards = entry.target.querySelectorAll('.pillar-card');
+                            pillarCards.forEach((card, index) => {
+                                setTimeout(() => {
+                                    card.classList.add('visible');
+                                }, index * 150); // Stagger effect
+                            });
+                        }
+                    });
+                }, { threshold: 0.2 });
+                
+                pillarsObserver.observe(pillarsSection);
+            }
+        });
+
+        // Parallax effect disabled to prevent layout interference
+        // The hero parallax was causing subsequent sections to move incorrectly
+        const hero = document.querySelector('.hero');
+        if (hero) {
+            // Ensure hero transform is reset and stays reset
+            hero.style.transform = 'translate3d(0, 0, 0)';
+        }
+
+        // Optimized magnetic hover effect with throttling
+        document.querySelectorAll('.magnetic').forEach(card => {
+            let magneticTicking = false;
+            let cachedRect = null;
+            
+            card.addEventListener('mouseenter', function() {
+                cachedRect = this.getBoundingClientRect();
+            });
+            
+            card.addEventListener('mousemove', function(e) {
+                if (!magneticTicking && cachedRect) {
+                    requestAnimationFrame(() => {
+                        const x = e.clientX - cachedRect.left;
+                        const y = e.clientY - cachedRect.top;
+                        const centerX = cachedRect.width / 2;
+                        const centerY = cachedRect.height / 2;
+                        const deltaX = (x - centerX) / centerX;
+                        const deltaY = (y - centerY) / centerY;
+                        
+                        this.style.transform = `perspective(1000px) rotateX(${deltaY * -3}deg) rotateY(${deltaX * 3}deg) translateZ(5px)`;
+                        magneticTicking = false;
+                    });
+                    magneticTicking = true;
+                }
+            });
+
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
+                cachedRect = null;
+            });
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add loading animation
+        window.addEventListener('load', function() {
+            document.body.classList.add('loaded');
+        });
+
+        // Enhanced CTA button interactions with will-change optimization
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('mouseenter', function() {
+                this.style.willChange = 'transform';
+                this.style.transform = 'translateY(-4px) scale(1.05)';
+            });
+            
+            button.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+                this.style.willChange = 'auto';
+            });
+        });
+
+        // Three words animation trigger - with transform protection
+        const threeWords = document.querySelector('.three-words');
+        if (threeWords) {
+            // Ensure the element maintains its own transform context
+            threeWords.style.transform = 'translate3d(0, 0, 0)';
+            
+            const threeWordsObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animation = 'fadeInUp 1.5s ease-out';
+                        // Protect the transform after animation completes
+                        setTimeout(() => {
+                            entry.target.style.transform = 'translate3d(0, 0, 0)';
+                        }, 1500);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            threeWordsObserver.observe(threeWords);
+        }
+
+        // Mobile navigation toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mobileNav = document.getElementById('mobileNav');
+
+        if (mobileMenuToggle && mobileNav) {
+            mobileMenuToggle.addEventListener('click', function() {
+                this.classList.toggle('active');
+                mobileNav.classList.toggle('active');
+                document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : 'auto';
+            });
+
+            // Close mobile nav when clicking on a link
+            document.querySelectorAll('.mobile-nav a').forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenuToggle.classList.remove('active');
+                    mobileNav.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                });
+            });
+
+            // Close mobile nav when clicking outside
+            mobileNav.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    mobileMenuToggle.classList.remove('active');
+                    this.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        }
+
+        // Modal functionality
+        const membershipModal = document.getElementById('membershipModal');
+        const contactModal = document.getElementById('contactModal');
+        const modalCloses = document.querySelectorAll('.modal-close');
+
+        // Membership signup buttons
+        document.querySelectorAll('.membership-signup').forEach(button => {
+            button.addEventListener('click', function() {
+                const tier = this.dataset.tier;
+                const modalTitle = document.getElementById('modalTitle');
+                const membershipTier = document.getElementById('membershipTier');
+                
+                membershipTier.value = tier;
+                
+                switch(tier) {
+                    case 'free':
+                        modalTitle.textContent = 'Join as a Supporter (Free)';
+                        break;
+                    case 'champion':
+                        modalTitle.textContent = 'Become a Champion (£25/month)';
+                        break;
+                    case 'partner':
+                        modalTitle.textContent = 'Become a Partner (£100/month)';
+                        break;
+                    case 'investor':
+                        modalTitle.textContent = 'Become an Investor (£1000+)';
+                        break;
+                }
+                
+                membershipModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        // Contact form buttons
+        document.querySelectorAll('a[href="mailto:hello@restoreland.uk"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                contactModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        // Close modals
+        modalCloses.forEach(close => {
+            close.addEventListener('click', function() {
+                membershipModal.classList.remove('active');
+                contactModal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
+
+        // Close modals when clicking outside
+        [membershipModal, contactModal].forEach(modal => {
+            modal.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    this.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+
+        // Form submissions
+        document.getElementById('membershipForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Collect form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Show success message
+            alert(`Thank you ${data.fullName}! Your ${data.membershipTier} membership application has been received. We'll be in touch soon!`);
+            
+            // Reset form and close modal
+            this.reset();
+            membershipModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+            
+            // Here you would typically send the data to your server
+            console.log('Membership data:', data);
+        });
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Collect form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Show success message
+            alert(`Thank you ${data.contactName}! Your message has been sent. We'll get back to you within 24 hours.`);
+            
+            // Reset form and close modal
+            this.reset();
+            contactModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+            
+            // Here you would typically send the data to your server
+            console.log('Contact data:', data);
+        });
+
+        // Escape key to close modals
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                membershipModal.classList.remove('active');
+                contactModal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Performance optimization: Remove redundant scroll handler
+        // All scroll handling is now consolidated in the throttled handler above
+
+        // Preload critical fonts
+        const fontLink = document.createElement('link');
+        fontLink.rel = 'preload';
+        fontLink.as = 'font';
+        fontLink.type = 'font/woff2';
+        fontLink.crossOrigin = 'anonymous';
+        document.head.appendChild(fontLink);
+
+        // Add loading state management
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.classList.add('loaded');
+        });
+    </script>
+</body>
+</html>
