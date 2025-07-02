@@ -19,9 +19,9 @@
     <meta property="og:url" content="https://restoreland.uk/">
     <meta property="og:title" content="Restore Land - Britain's Future Starts Here">
     <meta property="og:site_name" content="Restore Land">
-    <meta property="og:description" content="The three-word revolution transforming Britain from extraction to regeneration. Join the movement for prosperous, beautiful, resilient land.">
+    <meta property="og:description" content="The two-word revolution transforming Britain from extraction to regeneration. Join the movement for prosperous, beautiful, resilient land.">
     <meta property="og:image" content="https://restoreland.uk/brand-assets/social-preview.jpg">
-    <meta property="og:image:alt" content="Restore Land - Britain's Future Starts Here. The three-word revolution transforming Britain from extraction to regeneration.">
+    <meta property="og:image:alt" content="Restore Land - Britain's Future Starts Here. The two-word revolution transforming Britain from extraction to regeneration.">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:type" content="image/jpeg">
@@ -32,12 +32,12 @@
     <meta name="twitter:site" content="@restoreland">
     <meta name="twitter:creator" content="@restoreland">
     <meta name="twitter:title" content="Restore Land - Britain's Future Starts Here">
-    <meta name="twitter:description" content="The three-word revolution transforming Britain from extraction to regeneration. Join the movement for prosperous, beautiful, resilient land.">
+    <meta name="twitter:description" content="The two-word revolution transforming Britain from extraction to regeneration. Join the movement for prosperous, beautiful, resilient land.">
     <meta name="twitter:image" content="https://restoreland.uk/brand-assets/social-preview.jpg">
-    <meta name="twitter:image:alt" content="Restore Land - Britain's Future Starts Here. The three-word revolution transforming Britain from extraction to regeneration.">
+    <meta name="twitter:image:alt" content="Restore Land - Britain's Future Starts Here. The two-word revolution transforming Britain from extraction to regeneration.">
 
     <!-- Additional Meta Tags -->
-    <meta name="description" content="Restore Land: The three-word revolution transforming Britain from extraction to regeneration. Join the movement for prosperous, beautiful, resilient land through our 8 pillars framework.">
+    <meta name="description" content="Restore Land: The two-word revolution transforming Britain from extraction to regeneration. Join the movement for prosperous, beautiful, resilient land through our 8 pillars framework.">
     <meta name="keywords" content="land restoration, sustainable agriculture, regenerative farming, Britain, environmental policy, rural development, climate change, food security">
     <meta name="author" content="Restore Land Movement">
     
@@ -307,12 +307,12 @@
             color: #22c55e;
         }
 
-        .three-word-hero {
+        .two-word-hero {
             text-align: center;
             margin-bottom: 60px;
         }
 
-        .three-words {
+        .two-words {
             font-family: 'Playfair Display', serif;
             font-size: clamp(4.5rem, 12vw, 10rem);
             font-weight: 900;
@@ -778,7 +778,7 @@
                 opacity: 0.4;
             }
 
-            .three-words {
+            .two-words {
                 font-size: clamp(3rem, 10vw, 6rem);
             }
 
@@ -1188,12 +1188,12 @@
     <!-- Three Word Revolution -->
     <section class="section" id="manifesto">
         <h2>The Vision: Land Abundance for All</h2>
-        <div class="three-word-hero">
+        <div class="two-word-hero">
             <div class="section-icon">🇬🇧</div>
-            <div class="three-words">RESTORE LAND</div>
+            <div class="two-words">RESTORE LAND</div>
             <div class="decorative-line"></div>
             <p style="font-size: 1.3rem; color: #6b7280; max-width: 600px; margin: 0 auto;">
-                The three-word revolution that will transform Britain from extraction to regeneration, 
+                The two-word revolution that will transform Britain from extraction to regeneration, 
                 from decline to abundance, from quarterly profits to generational prosperity.
             </p>
             <div style="text-align: center; margin: 30px 0;">
@@ -1987,12 +1987,12 @@
         });
 
         // Three words animation trigger - with transform protection
-        const threeWords = document.querySelector('.three-words');
-        if (threeWords) {
+        const twoWords = document.querySelector('.two-words');
+        if (twoWords) {
             // Ensure the element maintains its own transform context
-            threeWords.style.transform = 'translate3d(0, 0, 0)';
+            twoWords.style.transform = 'translate3d(0, 0, 0)';
             
-            const threeWordsObserver = new IntersectionObserver(function(entries) {
+            const twoWordsObserver = new IntersectionObserver(function(entries) {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.style.animation = 'fadeInUp 1.5s ease-out';
@@ -2004,7 +2004,7 @@
                 });
             }, { threshold: 0.5 });
             
-            threeWordsObserver.observe(threeWords);
+            twoWordsObserver.observe(twoWords);
         }
 
         // Mobile navigation toggle

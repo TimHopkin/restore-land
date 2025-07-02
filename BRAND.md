@@ -119,7 +119,7 @@ font-weight: 400-600;
 - **Confident**: "Britain will build the world's first..."
 
 ### Key Messaging
-1. **Core Promise**: "Restore Land" - the three-word revolution
+1. **Core Promise**: "Restore Land" - the two-word revolution
 2. **Value Proposition**: Focus on prosperity, not just environment
 3. **Evidence**: Use specific, measurable outcomes
 4. **Call to Action**: Clear next steps for different audiences
