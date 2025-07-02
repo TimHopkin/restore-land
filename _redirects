@@ -1,6 +1,7 @@
 /manifesto /manifesto.html 200
 /brand-guidelines /brand-guidelines.html 200
 /communications-strategy /communications-strategy.html 200
+/governance /governance.html 200
 
 # Fallback for any other pages without extensions
 /:path.html /:path.html 200
