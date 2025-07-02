@@ -16,8 +16,8 @@ Each hero image should embody the "future meets nature" theme:
 - **Dimensions**: 1920x1080px minimum (16:9 aspect ratio)
 - **Format**: WebP for modern browsers, JPEG fallback
 - **Quality**: High resolution for crisp display on all devices
-- **File Size**: Optimized for web (< 500KB per image)
-- **Color Grading**: Should complement brand green palette
+- **File Size**: Optimised for web (< 500KB per image)
+- **Colour Grading**: Should complement brand green palette
 
 ### Current Image Set
 
@@ -55,13 +55,13 @@ Each hero image should embody the "future meets nature" theme:
 Images can be rotated for different campaigns, seasons, or user engagement:
 - **Default**: Regenerative farm (appeals to farmers and landowners)
 - **Energy Focus**: Energy landscape (appeals to sustainability advocates) 
-- **Community Events**: Community farming (appeals to local organizers)
+- **Community Events**: Community farming (appeals to local organisers)
 - **Scientific Content**: Soil restoration (appeals to researchers and technical audience)
 
 ## Image Sources
 Currently using placeholder data URIs for development. Production images should be:
 - **Original photography** commissioned specifically for Restore Land
-- **Licensed stock photography** that meets brand requirements  
+- **Licenced stock photography** that meets brand requirements  
 - **Community submissions** from actual restoration projects (with permission)
 
 ## Updates

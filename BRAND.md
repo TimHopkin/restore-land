@@ -112,6 +112,11 @@ font-weight: 400-600;
 
 ## Content Guidelines
 
+### Language Standards
+- **British English**: All content must use British English spelling and terminology
+- **Consistency**: Maintain consistent language standards across all platforms and materials
+- **Examples**: Use "colour" not "color", "centre" not "center", "organisation" not "organization", "optimise" not "optimize", "behaviour" not "behavior"
+
 ### Voice & Tone
 - **Direct**: "This isn't about the environment. It's about prosperity."
 - **Urgent**: "Simple. Clear. Urgent."
@@ -130,13 +135,13 @@ font-weight: 400-600;
 3. **Body**: Specific evidence and practical steps
 4. **CTA**: Direct action with clear value
 
-## File Organization
+## File Organisation
 
 ### Brand Assets Structure
 ```
 brand-assets/
 ├── logos/                  # All logo variants
-├── colors/                 # Color swatches and CSS
+├── colours/                # Colour swatches and CSS
 ├── fonts/                  # Typography assets
 ├── templates/              # Social media and presentation templates
 ├── icons/                  # Favicons and app icons
@@ -145,13 +150,13 @@ brand-assets/
 
 ### Naming Conventions
 - Logo files: `restore-land-[variant].[format]`
-- Color files: `restore-land-colors.[format]`
+- Colour files: `restore-land-colours.[format]`
 - Templates: `[platform]-template.[format]`
 
 ## Implementation Checklist
 
 ### New Page/Component Checklist
-- [ ] Uses approved color palette
+- [ ] Uses approved colour palette
 - [ ] Implements correct typography hierarchy
 - [ ] Includes proper meta tags for social sharing
 - [ ] Maintains consistent spacing system
@@ -162,12 +167,12 @@ brand-assets/
 - [ ] Uses 1200x630px dimensions for sharing
 - [ ] Includes Restore Land branding
 - [ ] Maintains readable text contrast
-- [ ] Uses approved color scheme
+- [ ] Uses approved colour scheme
 - [ ] Includes appropriate CTAs
 
 ### Brand Compliance Review
 Before publishing any content:
-1. **Visual**: Does it use our colors and fonts correctly?
+1. **Visual**: Does it use our colours and fonts correctly?
 2. **Content**: Does it sound like Restore Land (direct, urgent, practical)?
 3. **Technical**: Are meta tags and structured data correct?
 4. **Accessibility**: Is contrast sufficient and text readable?

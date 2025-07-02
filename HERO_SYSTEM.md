@@ -7,27 +7,27 @@ The hero section has been upgraded with a dynamic background system that showcas
 
 ### 🎨 **Dynamic Background System**
 - **4 Unique Hero Themes**: Each embodying the "future meets nature" philosophy
-- **Automatic Rotation**: Images rotate every 15-25 seconds (device-optimized timing)
+- **Automatic Rotation**: Images rotate every 15-25 seconds (device-optimised timing)
 - **Smooth Transitions**: CSS-powered fade transitions between backgrounds
 - **Ken Burns Effect**: Subtle zoom and movement for visual interest
 
-### 🚀 **Performance Optimizations**
-- **Mobile-First**: Reduced animations and optimized timing for mobile devices
+### 🚀 **Performance Optimisations**
+- **Mobile-First**: Reduced animations and optimised timing for mobile devices
 - **Reduced Motion Support**: Respects user accessibility preferences
 - **Visibility API**: Pauses animations when page is hidden
 - **Hardware Detection**: Adjusts performance based on device capabilities
 
 ### 📱 **Responsive Design**
-- **Mobile Optimizations**: Simplified animations and optimized text sizing
-- **Tablet Support**: Medium-device specific optimizations
+- **Mobile Optimisations**: Simplified animations and optimised text sizing
+- **Tablet Support**: Medium-device specific optimisations
 - **High DPI Support**: Enhanced rendering for retina displays
 - **Accessibility**: Proper ARIA labels and contrast ratios
 
 ### ✨ **Enhanced Visual Effects**
-- **Improved Overlays**: Brand-colored gradient overlays for better text readability
+- **Improved Overlays**: Brand-coloured gradient overlays for better text readability
 - **Enhanced Particles**: More sophisticated floating particle animations
 - **Text Glow Effects**: Subtle glow effects on hero text for better impact
-- **Brand Integration**: All effects use the official Restore Land color palette
+- **Brand Integration**: All effects use the official Restore Land colour palette
 
 ## Hero Image Themes
 
@@ -76,7 +76,7 @@ The hero section has been upgraded with a dynamic background system that showcas
 
 .hero::before {
     /* Enhanced overlay system */
-    background: brand-colored gradients + dark overlay;
+    background: brand-coloured gradients + dark overlay;
 }
 
 .hero::after {
@@ -111,7 +111,7 @@ initializeHeroSystem();
 
 ### Performance Considerations
 
-- **Mobile**: Automatic performance optimizations applied
+- **Mobile**: Automatic performance optimisations applied
 - **Low-End Devices**: Reduced animation frequency and complexity
 - **Accessibility**: Respects `prefers-reduced-motion` setting
 - **Visibility**: Pauses when page is hidden to save resources
@@ -145,16 +145,16 @@ Replace SVG placeholders with high-quality photography:
 - **User Preferences**: Remember user's preferred hero theme
 - **Campaign Integration**: Dynamic hero based on active campaigns
 
-### Phase 4: Performance Optimization
+### Phase 4: Performance Optimisation
 - **Intersection Observer**: Only animate when hero is visible
 - **Service Worker**: Cache hero images for offline experience
 - **WebP Support**: Automatic format selection based on browser support
-- **CDN Integration**: Serve images from optimized CDN
+- **CDN Integration**: Serve images from optimised CDN
 
 ## Brand Compliance
 
 All hero images and effects strictly follow Restore Land brand guidelines:
-- **Color Palette**: Only approved brand colors used in overlays and effects
+- **Colour Palette**: Only approved brand colours used in overlays and effects
 - **Typography**: Maintains existing font hierarchy and styling
 - **Voice**: Images support the "practical patriotism" messaging
 - **Accessibility**: Proper contrast ratios and motion preferences respected
@@ -163,7 +163,7 @@ All hero images and effects strictly follow Restore Land brand guidelines:
 
 - **Modern Browsers**: Full feature support (Chrome 60+, Firefox 60+, Safari 12+)
 - **Legacy Browsers**: Graceful degradation to static background
-- **Mobile Browsers**: Optimized experience with reduced animations
+- **Mobile Browsers**: Optimised experience with reduced animations
 - **Accessibility**: Screen reader support with proper ARIA labels
 
 ## File Structure

@@ -27,7 +27,7 @@ The hero section has been transformed from a complex, cluttered SVG-based system
 ```css
 .hero {
     background: linear-gradient(135deg, #065f46 0%, #16a34a 50%, #10b981 100%);
-    /* Clean gradient using official brand colors */
+    /* Clean gradient using official brand colours */
 }
 
 .hero::before {
@@ -40,10 +40,10 @@ The hero section has been transformed from a complex, cluttered SVG-based system
 }
 ```
 
-### **Brand Colors Used**
+### **Brand Colours Used**
 - **Deep Forest** (`#065f46`) → **Restore Green** (`#16a34a`) → **Growth Green** (`#10b981`)
 - Creates a beautiful progression that embodies growth and regeneration
-- 100% aligned with official brand color palette
+- 100% aligned with official brand colour palette
 
 ### **Typography Enhancement**
 - **Clean white text** with enhanced shadows for readability
@@ -62,19 +62,19 @@ The hero section has been transformed from a complex, cluttered SVG-based system
 - **Dramatically improved performance** - no complex SVG rendering
 - **Faster page load** - eliminated large data URI images
 - **Reduced JavaScript** - 90% less JS code for hero functionality
-- **Better mobile experience** - optimized for mobile devices
+- **Better mobile experience** - optimised for mobile devices
 
 ### **🎯 Brand Alignment**
-- **100% brand compliant** - uses only official Restore Land colors
+- **100% brand compliant** - uses only official Restore Land colours
 - **Sophisticated aesthetic** that matches the rest of the site
-- **Typography-centered** approach aligns with brand messaging strategy
+- **Typography-centred** approach aligns with brand messaging strategy
 - **Clean, direct impact** supports "practical patriotism" message
 
 ### **🛠 Maintainability**
 - **Simplified codebase** - easy to understand and modify
 - **No dynamic complexity** - static gradient is reliable and predictable
 - **Future-proof** - can easily accommodate new brand direction
-- **Mobile-optimized** - responsive and accessible
+- **Mobile-optimised** - responsive and accessible
 
 ## **Technical Specifications**
 
@@ -96,21 +96,21 @@ background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
 
 ## **Browser Support**
 - **Modern Browsers**: Full support with CSS gradients
-- **Legacy Browsers**: Graceful degradation to solid color fallback
-- **Mobile**: Optimized experience with reduced animations
+- **Legacy Browsers**: Graceful degradation to solid colour fallback
+- **Mobile**: Optimised experience with reduced animations
 - **Accessibility**: High contrast text, respects reduced motion preferences
 
 ## **Future Considerations**
 
 ### **Potential Enhancements**
-- **Seasonal variations**: Subtle color shifts for different seasons
+- **Seasonal variations**: Subtle colour shifts for different seasons
 - **Campaign customization**: Alternative gradients for specific campaigns  
 - **Photo overlay option**: Optional hero image overlay for special events
 - **Interactive elements**: Subtle hover effects without complexity
 
 ### **Brand Evolution**
-- **Easy color updates**: Gradient uses CSS custom properties
-- **Scalable approach**: Can accommodate brand color palette changes
+- **Easy colour updates**: Gradient uses CSS custom properties
+- **Scalable approach**: Can accommodate brand colour palette changes
 - **Consistent methodology**: Approach can be applied to other sections
 
 ## **Conclusion**

@@ -7,7 +7,7 @@ This directory contains all official brand assets for the Restore Land movement.
 ```
 brand-assets/
 ├── logos/          # Logo files in various formats
-├── colors/         # Color palette files and swatches
+├── colours/        # Colour palette files and swatches
 ├── fonts/          # Typography assets and web fonts
 ├── templates/      # Social media and presentation templates
 └── icons/          # Favicon and app icons
@@ -24,17 +24,17 @@ brand-assets/
 ### Usage Guidelines
 - Minimum size: 120px width for digital, 25mm for print
 - Clear space: Minimum ½ x-height on all sides
-- Always use official color variants
+- Always use official colour variants
 - Never distort, rotate, or modify the logo
 
-## Color Palette
+## Colour Palette
 
-### Primary Colors
+### Primary Colours
 - **Restore Green**: #16a34a - Logo, main headings, primary buttons
 - **Growth Green**: #10b981 - Interactive elements, hover states
 - **Deep Forest**: #065f46 - Important text, dark applications
 
-### Secondary Colors
+### Secondary Colours
 - **Light Growth**: #34d399 - Backgrounds, subtle accents
 - **Vibrant Earth**: #059669 - Supporting elements
 - **Fresh Mint**: #6ee7b7 - Light accents, gradients
@@ -57,8 +57,8 @@ For the complete brand kit including high-resolution files:
 - Contact: hello@restoreland.uk
 - Web: [Brand Guidelines](/brand-guidelines.html)
 
-## License
+## Licence
 
-These assets are for official Restore Land communications, partner organizations, and supporters creating content in support of the movement. Do not modify logo files or use assets for competing organizations without approval.
+These assets are for official Restore Land communications, partner organisations, and supporters creating content in support of the movement. Do not modify logo files or use assets for competing organisations without approval.
 
 Last updated: 2025-01-01
