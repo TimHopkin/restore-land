@@ -25,6 +25,11 @@
   to = "/brand-guidelines.html" 
   status = 200
 
+[[redirects]]
+  from = "/communications-strategy"
+  to = "/communications-strategy.html"
+  status = 200
+
 [[headers]]
   for = "/*.html"
   [headers.values]
