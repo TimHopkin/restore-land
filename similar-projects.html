@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Similar Projects - Restore Land</title>
+    
+    <!-- Favicon and Icons -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="favicon-32x32.svg">
+    <link rel="apple-touch-icon" href="apple-touch-icon.svg">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#16a34a">
+    <meta name="msapplication-TileColor" content="#16a34a">
+    <meta name="msapplication-config" content="browserconfig.xml">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://restoreland.uk/similar-projects">
+    <meta property="og:title" content="Similar Projects - Restore Land">
+    <meta property="og:site_name" content="Restore Land">
+    <meta property="og:description" content="Discover regenerative land projects worldwide that share Restore Land's vision of transforming agriculture and communities through sustainable practices.">
+    <meta property="og:image" content="https://restoreland.uk/brand-assets/social-preview.jpg">
+    <meta property="og:image:alt" content="Similar Projects - Restore Land. Discover regenerative projects worldwide.">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:locale" content="en_GB">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@restoreland">
+    <meta name="twitter:creator" content="@restoreland">
+    <meta name="twitter:title" content="Similar Projects - Restore Land">
+    <meta name="twitter:description" content="Discover regenerative land projects worldwide that share Restore Land's vision of transforming agriculture and communities through sustainable practices.">
+    <meta name="twitter:image" content="https://restoreland.uk/brand-assets/social-preview.jpg">
+    <meta name="twitter:image:alt" content="Similar Projects - Restore Land. Discover regenerative projects worldwide.">
+
+    <!-- Additional Meta Tags -->
+    <meta name="description" content="Explore similar regenerative land projects worldwide that demonstrate the power of sustainable agriculture, community land ownership, and ecosystem restoration.">
+    <meta name="keywords" content="regenerative agriculture, community land trusts, sustainable farming, ecosystem restoration, food systems, rural development">
+    <meta name="author" content="Restore Land Movement">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Similar Projects - Restore Land",
+      "url": "https://restoreland.uk/similar-projects",
+      "description": "Discover regenerative land projects worldwide that share Restore Land's vision",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Restore Land",
+        "url": "https://restoreland.uk"
+      }
+    }
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #fafafa;
+        }
+
+        /* Navigation Styles */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 15px 0;
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #16a34a;
+            text-decoration: none;
+            letter-spacing: -1px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #4b5563;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #16a34a;
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: #16a34a;
+            transition: 0.3s;
+        }
+
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            z-index: 999;
+            padding-top: 80px;
+        }
+
+        .mobile-nav ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        .mobile-nav li {
+            margin: 20px 0;
+        }
+
+        .mobile-nav a {
+            font-size: 1.3rem;
+            color: #4b5563;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #065f46 0%, #16a34a 50%, #10b981 100%);
+            color: white;
+            text-align: center;
+            padding: 120px 20px 80px;
+            margin-top: 70px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 800;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 3vw, 1.4rem);
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .hero-description {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            opacity: 0.8;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: 60px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 700;
+            color: #16a34a;
+            margin-bottom: 15px;
+        }
+
+        .section-description {
+            font-size: 1.2rem;
+            color: #4b5563;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        /* Project Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border-left: 4px solid #16a34a;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #16a34a, #10b981, #22c55e);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(22, 163, 74, 0.15);
+        }
+
+        .project-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .flag {
+            font-size: 1.2em;
+        }
+
+        .project-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #16a34a;
+            flex: 1;
+        }
+
+        .project-name a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .project-name a:hover {
+            color: #10b981;
+        }
+
+        .external-link {
+            color: #10b981;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .project-description {
+            color: #4b5563;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .project-focus {
+            background: rgba(22, 163, 74, 0.1);
+            color: #16a34a;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        /* Category Sections */
+        .category-section {
+            margin-bottom: 80px;
+        }
+
+        .category-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #065f46;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .category-description {
+            color: #6b7280;
+            font-style: italic;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: rgba(22, 163, 74, 0.03);
+            border-left: 3px solid #16a34a;
+            border-radius: 8px;
+        }
+
+        /* Stats Section */
+        .stats {
+            background: linear-gradient(135deg, #16a34a, #10b981);
+            color: white;
+            padding: 60px 0;
+            margin: 60px 0;
+            border-radius: 20px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 20px;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        /* Call to Action */
+        .cta-section {
+            background: linear-gradient(135deg, rgba(22, 163, 74, 0.05), rgba(16, 185, 129, 0.05));
+            padding: 60px 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .cta-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #16a34a;
+            margin-bottom: 20px;
+        }
+
+        .cta-description {
+            font-size: 1.2rem;
+            color: #4b5563;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #16a34a, #10b981);
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(22, 163, 74, 0.3);
+        }
+
+        /* Footer */
+        .footer {
+            background: #111827;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #22c55e;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #10b981;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: flex;
+            }
+
+            .mobile-nav.active {
+                display: block;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .project-card {
+                padding: 25px;
+            }
+
+            .hero {
+                padding: 100px 20px 60px;
+            }
+
+            .section {
+                padding: 40px 0;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">RESTORE LAND</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="manifesto.html">Full Manifesto</a></li>
+                <li><a href="similar-projects.html" class="active">Similar Projects</a></li>
+                <li><a href="governance.html">Governance</a></li>
+                <li><a href="brand-guidelines.html">Brand Guidelines</a></li>
+                <li><a href="communications-strategy.html">Communications</a></li>
+                <li><a href="mailto:hello@restoreland.uk">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="manifesto.html">Full Manifesto</a></li>
+            <li><a href="similar-projects.html">Similar Projects</a></li>
+            <li><a href="governance.html">Governance</a></li>
+            <li><a href="brand-guidelines.html">Brand Guidelines</a></li>
+            <li><a href="communications-strategy.html">Communications</a></li>
+            <li><a href="mailto:hello@restoreland.uk">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>🌱 Similar Projects</h1>
+            <p class="hero-subtitle">Allied Organizations & Movements</p>
+            <p class="hero-description">
+                Discover organizations worldwide that share Restore Land's vision of transforming agriculture from extraction to regeneration through democratic land ownership, sustainable farming, and community-led change.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Introduction -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">A Global Movement for Land Restoration</h2>
+                <p class="section-description">
+                    Restore Land is part of a growing global movement transforming how we relate to land. These organizations demonstrate that regenerative agriculture, community ownership, and sustainable land management aren't just ideals—they're proven pathways to prosperity, resilience, and ecological restoration.
+                </p>
+            </div>
+        </section>
+
+        <!-- Stats -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">75+</div>
+                        <div class="stat-label">Allied Organizations</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">Key Sectors</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Countries Represented</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1M+</div>
+                        <div class="stat-label">Community Members</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Regenerative Agriculture -->
+        <section class="category-section fade-in">
+            <h3 class="category-title">🌾 Regenerative Agriculture & Sustainable Farming</h3>
+            <p class="category-description">
+                Organizations leading the transition to regenerative farming practices that restore soil health, enhance biodiversity, and create resilient food systems while supporting farmer livelihoods.
+            </p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="flag">🇬🇧</span>
+                        <div class="project-name">
+                            <a href="https://groundswellag.com/" target="_blank">Groundswell</a>
+                        </div>
+                        <a href="https://groundswellag.com/" target="_blank" class="external-link">↗</a>
+                    </div>
+                    <p class="project-description">
+                        The UK's leading regenerative agriculture festival and movement, providing a forum for farmers and growers to learn about regenerative farming systems. Attracts 8,000+ attendees annually.
+                    </p>
+                    <span class="project-focus">Regenerative Agriculture Festival</span>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="flag">🇬🇧</span>
+                        <div class="project-name">
+                            <a href="https://leaf.eco/" target="_blank">LEAF (Linking Environment And Farming)</a>
+                        </div>
+                        <a href="https://leaf.eco/" target="_blank" class="external-link">↗</a>
+                    </div>
+                    <p class="project-description">
+                        Leading organization promoting sustainable food and farming in the UK. Runs Open Farm Sunday and works with farmers, food industry, and consumers to enable sustainable farming practices.
+                    </p>
+                    <span class="project-focus">Sustainable Farming Promotion</span>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="flag">🇬🇧</span>
+                        <div class="project-name">
+                            <a href="https://www.rspb.org.uk/" target="_blank">RSPB</a>
+                        </div>
+                        <a href="https://www.rspb.org.uk/" target="_blank" class="external-link">↗</a>
+                    </div>
+                    <p class="project-description">
+                        Champions nature-positive farming and conservation land management. Active participant in Groundswell and advocate for wildlife-friendly agriculture policies.
+                    </p>
+                    <span class="project-focus">Nature-Positive Farming</span>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="flag">🌍</span>
+                        <div class="project-name">
+                            <a href="https://regenerationinternational.org/" target="_blank">Regeneration International</a>
+                        </div>
+                        <a href="https://regenerationinternational.org/" target="_blank" class="external-link">↗</a>
+                    </div>
+                    <p class="project-description">
+                        Global network promoting regenerative agriculture and land use practices. Connects information and resources highlighting the connection between healthy soil and climate solutions.
+                    </p>
+                    <span class="project-focus">Global Regenerative Network</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Land Ownership -->
+        <section class="category-section fade-in">
+            <h3 class="category-title">🏘️ Community Land Ownership & Democratic Governance</h3>
+            <p class="category-description">
+                Organizations pioneering community-led land ownership models that keep land affordable in perpetuity while supporting local economic development and democratic decision-making.
+            </p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="flag">🇬🇧</span>
+                        <div class="project-name">
+                            <a href="https://www.communitylandtrusts.org.uk/" target="_blank">Community Land Trust Network UK</a>
+                        </div>
+                        <a href="https://www.communitylandtrusts.org.uk/" target="_blank" class="external-link">↗</a>
+                    </div>
+                    <p class="project-description">
+                        National membership body for community land trusts in England and Wales. Leading the movement for increased community ownership of land and affordable housing with 263+ active CLTs.
+                    </p>
+                    <span class="project-focus">CLT Movement Leadership</span>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="flag">🏴󠁧󠁢󠁳󠁣󠁴󠁿</span>
+                        <div class="project-name">
+                            <a href="https://www.communitylandscotland.org.uk/" target="_blank">Community Land Scotland</a>
+                        </div>
+                        <a href="https://www.communitylandscotland.org.uk/" target="_blank" class="external-link">↗</a>
+                    </div>
+                    <p class="project-description">
+                        Supporting community land ownership across Scotland. Represents communities that own or aspire to own land, promoting sustainable rural development through community control.
+                    </p>
+                    <span class="project-focus">Scottish Community Land</span>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="flag">🇬🇧</span>
+                        <div class="project-name">
+                            <a href="https://cles.org.uk/" target="_blank">CLES (Centre for Local Economic Strategies)</a>
+                        </div>
+                        <a href="https://cles.org.uk/" target="_blank" class="external-link">↗</a>
+                    </div>
+                    <p class="project-description">
+                        Promotes community land trusts as vehicles for local economic development. Supports democratically run organizations developing land and assets in community interests.
+                    </p>
+                    <span class="project-focus">Community Wealth Building</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Food Systems -->
+        <section class="category-section fade-in">
+            <h3 class="category-title">🍞 Food Systems Transformation & Policy</h3>
+            <p class="category-description">
+                Organizations working to create fair, healthy, and sustainable food systems through policy change, community action, and ethical business practices.
+            </p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="flag">🇬🇧</span>
+                        <div class="project-name">
+                            <a href="https://www.foodethicscouncil.org/" target="_blank">Food Ethics Council</a>
+                        </div>
+                        <a href="https://www.foodethicscouncil.org/" target="_blank" class="external-link">↗</a>
+                    </div>
+                    <p class="project-description">
+                        Transforms discussion around food and farming using ethics and values as foundation. Provides independent advice on food/farming ethics to create fair systems for people, animals, and environment.
+                    </p>
+                    <span class="project-focus">Food Ethics & Policy</span>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="flag">🇬🇧</span>
+                        <div class="project-name">
+                            <a href="https://foodfoundation.org.uk/" target="_blank">Food Foundation</a>
+                        </div>
+                        <a href="https://foodfoundation.org.uk/" target="_blank" class="external-link">↗</a>
+                    </div>
+                    <p class="project-description">
+                        Mission to change food policy and business practice ensuring everyone can afford and access healthy diet. Works with 100+ businesses and cities to make vegetables more accessible.
+                    </p>
+                    <span class="project-focus">Food Access & Poverty</span>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="flag">🇬🇧</span>
+                        <div class="project-name">
+                            <a href="https://www.sustainweb.org/" target="_blank">Sustain</a>
+                        </div>
+                        <a href="https://www.sustainweb.org/" target="_blank" class="external-link">↗</a>
+                    </div>
+                    <p class="project-description">
+                        Alliance of nearly 100 national organizations promoting healthy, sustainable, local and ethical food. Advocates policies enhancing health and welfare of people, animals, and environment.
+                    </p>
+                    <span class="project-focus">Food & Farming Alliance</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Energy -->
+        <section class="category-section fade-in">
+            <h3 class="category-title">⚡ Community Energy & Renewable Cooperatives</h3>
+            <p class="category-description">
+                Community-owned renewable energy projects and cooperatives democratizing energy production, keeping profits local, and building energy sovereignty at community level.
+            </p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="flag">🇬🇧</span>
+                        <div class="project-name">
+                            <a href="https://energy4all.co.uk/" target="_blank">Energy4All</a>
+                        </div>
+                        <a href="https://energy4all.co.uk/" target="_blank" class="external-link">↗</a>
+                    </div>
+                    <p class="project-description">
+                        Provides support for all forms of renewable energy co-ops in the UK: wind power, solar PV, hydropower and biomass. Demonstrates the power of co-operation in renewable energy sector.
+                    </p>
+                    <span class="project-focus">Renewable Energy Co-ops</span>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="flag">🏴󠁧󠁢󠁳󠁣󠁴󠁿</span>
+                        <div class="project-name">
+                            <a href="https://localenergy.scot/" target="_blank">Local Energy Scotland</a>
+                        </div>
+                        <a href="https://localenergy.scot/" target="_blank" class="external-link">↗</a>
+                    </div>
+                    <p class="project-description">
+                        Helps communities deliver renewable energy projects through free support and advice. Supported by Scottish Government's Community and Renewable Energy Scheme (CARES).
+                    </p>
+                    <span class="project-focus">Scottish Community Energy</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section fade-in">
+            <h2 class="cta-title">Ready to Join the Movement?</h2>
+            <p class="cta-description">
+                These organizations show what's possible when communities take control of their land and resources. Restore Land is building on these proven models to create Britain's comprehensive regenerative transformation.
+            </p>
+            <a href="index.html#membership" class="cta-button">Join Restore Land Today</a>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="manifesto.html">Full Manifesto</a>
+                <a href="similar-projects.html">Similar Projects</a>
+                <a href="governance.html">Governance</a>
+                <a href="brand-guidelines.html">Brand Guidelines</a>
+                <a href="communications-strategy.html">Communications Strategy</a>
+                <a href="mailto:hello@restoreland.uk">Contact</a>
+            </div>
+            <p>&copy; 2025 Restore Land Movement. Britain's Future Starts Here.</p>
+            <p style="margin-top: 15px; opacity: 0.7;">Discover regenerative projects worldwide that share our vision.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Remove no-js class
+        document.documentElement.classList.remove('no-js');
+
+        // Mobile navigation
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mobileNav = document.getElementById('mobileNav');
+
+        if (mobileMenuToggle && mobileNav) {
+            mobileMenuToggle.addEventListener('click', function() {
+                this.classList.toggle('active');
+                mobileNav.classList.toggle('active');
+                document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : 'auto';
+            });
+
+            // Close mobile nav when clicking on a link
+            document.querySelectorAll('.mobile-nav a').forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenuToggle.classList.remove('active');
+                    mobileNav.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                });
+            });
+
+            // Close mobile nav when clicking outside
+            mobileNav.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    mobileMenuToggle.classList.remove('active');
+                    this.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        }
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Initialize animations
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+        });
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
